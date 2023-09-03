@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-lm
+DEPS= principal.h calculadora.h
+OBJ=principal.o calculadora.o
+
+%.o: %.c $(DEPS)
+$(CC) -c -o $@ $< $(CFLAGS)
+
+principal: $(OBJ)
+$(CC) -o $@ $^ $(CFLAGS)
+echo "Compilado!"
+
+clean:
+rm -rf *.o principal
+
+run:
+./principal
