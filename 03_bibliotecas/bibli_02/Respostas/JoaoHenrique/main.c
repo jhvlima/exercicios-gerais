@@ -28,9 +28,11 @@ int main()
         {
             case 1:
             {
+                int resultado[linha1][coluna1];
                 if(possible_matrix_sum(linha1, coluna1, linha2, coluna2))
                 {
                     matrix_add(linha1, coluna1, matriz1, linha2, coluna2, matriz2, resultado);
+                    matrix_print(linha2, coluna1, resultado);
                 }
                 break;
             }
@@ -38,7 +40,9 @@ int main()
             {
                 if(possible_matrix_sub(linha1, coluna1, linha2, coluna2))
                 {
+                    int resultado[linha1][coluna1];
                     matrix_sub(linha1, coluna1, matriz1, linha2, coluna2, matriz2, resultado);
+                    matrix_print(linha1, coluna1, resultado);
                 }
                 break;
             }
@@ -46,20 +50,26 @@ int main()
             {
                 if(possible_matrix_multiply(coluna1, linha2))
                 {
+                    int resultado[linha2][coluna1];
                     matrix_multiply(linha1, coluna1, matriz1, linha2, coluna2, matriz2, resultado);
+                    matrix_print(linha2, coluna1, resultado);
                 }
                 break;
             }
             case 4:
             {
+                int resultado[linha1][coluna1];
                 int escalar = 0;
                 scanf("%d", &escalar);
-                matrix_add(linha1, coluna1, matriz1, escalar);
+                transpose_matrix(linha1, coluna1, matriz1, escalar);
+                matrix_print(linha1, coluna2, resultado);
                 break;
             }
             case 5:
-            {
+            {   int resultado[linha1][coluna1];
                 transpose_matrix(linha1, coluna1, matriz1, resultado);
+                matrix_print(linha1, coluna2, resultado);
+                break;
             }
             case 6:
             {
@@ -67,7 +77,4 @@ int main()
             }
         }
     }
-
-    
-    return 0;
 }
