@@ -132,12 +132,7 @@ void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
     {
         for (int j = 0; j < cols2; j++)
         {
-            sum = 0;
-            for (int k = 0; k < rows2; k++)
-            {
-                sum += matrix1[i][k] * matrix2[k][j]; 
-            }
-            result[i][j] = sum;
+            result[i][j] = matrix1[i][j] - matrix2[i][j];
         }
     }
 }
@@ -152,8 +147,22 @@ void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
  * @param matrix2 Segunda matriz.
  * @param result Matriz que armazenará o resultado da multiplicação.
  */
-void matrix_multiply(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols2]);
-
+void matrix_multiply(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols2])
+{
+    int sum = 0;
+    for(int i = 0; i < rows1; i++)
+    {
+        for (int j = 0; j < cols2; j++)
+        {
+            sum = 0;
+            for (int k = 0; k < rows2; k++)
+            {
+                sum += matrix1[i][k] * matrix2[k][j]; 
+            }
+            result[i][j] = sum;
+        }
+    }
+}
 /**
  * @brief Transpõe a matriz especificada.
  * @param rows Número de linhas da matriz.
@@ -161,7 +170,16 @@ void matrix_multiply(int rows1, int cols1, int matrix1[rows1][cols1], int rows2,
  * @param matrix Matriz a ser transposta.
  * @param result Matriz que armazenará o resultado da transposição.
  */
-void transpose_matrix(int rows, int cols, int matrix[rows][cols], int result[cols][rows]);
+void transpose_matrix(int rows, int cols, int matrix[rows][cols], int result[cols][rows])
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            result[i][j] = matrix[j][i];
+        }
+    }
+}
 
 /**
  * @brief Multiplica a matriz especificada por um escalar.
