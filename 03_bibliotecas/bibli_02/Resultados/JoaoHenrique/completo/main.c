@@ -23,7 +23,6 @@ int main()
 
     while(1)
     {
-        int acao;
         scanf("%d", &acao);
         switch (acao)
         {
