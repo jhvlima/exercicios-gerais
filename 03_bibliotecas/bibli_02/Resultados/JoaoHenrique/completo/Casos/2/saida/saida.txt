@@ -1,1 +1,50 @@
-valgrind: Resultados/JoaoHenrique/completo/prog: No such file or directory
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+Error: as dimensoes da matriz nao correspondem1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+Error: as dimensoes da matriz nao correspondem1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|58 64 139|
+|154 0 0|
+|3 3 -16779536|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|4 8 12|
+|16 20 24|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+Erro: Escolha da matriz invalida
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:

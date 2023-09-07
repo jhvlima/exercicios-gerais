@@ -8,11 +8,13 @@
  */
 void matrix_read(int rows, int cols, int matrix[rows][cols])
 {
+    int valor;
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
-            scanf("%d", matrix[i][j]);
+            scanf("%d", &valor);
+            matrix[i][j] = valor;
         }
     }
 }
@@ -29,10 +31,18 @@ void matrix_print(int rows, int cols, int matrix[rows][cols])
     {
         for (int j = 0; j < cols; j++)
         {
-            printf("%d", matrix[i][j]);
+            if (j == 0)
+            {
+                printf("|%d", matrix[i][j]);
+            }
+            else
+            {
+                printf(" %d", matrix[i][j]);
+            }
         }
-        printf("\n");
+        printf("|\n");
     }
+    printf("\n");
 }
 
 /**
@@ -127,7 +137,6 @@ void matrix_add(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
  */
 void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols1])
 {
-    int sum = 0;
     for(int i = 0; i < rows1; i++)
     {
         for (int j = 0; j < cols2; j++)
