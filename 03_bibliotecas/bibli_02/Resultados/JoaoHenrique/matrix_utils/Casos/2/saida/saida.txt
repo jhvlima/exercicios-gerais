@@ -45,10 +45,10 @@ Opcao escolhida:
 Opcao escolhida: 
 |4 16|
 |8 20|
-|0 31|
+|12 24|
 
-|7 9 0|
-|8 10 0|
+|7 9 11|
+|8 10 12|
 
 1 - Somar matrizes
 2 - Subtrair matrizes

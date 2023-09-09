@@ -72,7 +72,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 39.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/Casos/3/result_valgrind.txt.
@@ -84,19 +84,19 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta matrix_utils / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/matrix_utils/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 22.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta matrix_utils / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/matrix_utils/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 40.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 39.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/3/result_valgrind.txt.
@@ -113,14 +113,14 @@ Nome 0: JoaoHenrique
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos main: 0 de 3 / Nota 0.00
- - Valgrinds Corretos main: 1 de 3 / Nota 3.33
- - Resultados Corretos matrix_utils: 1 de 3 / Nota 3.33
- - Valgrinds Corretos matrix_utils: 1 de 3 / Nota 3.33
+ - Valgrinds Corretos main: 2 de 3 / Nota 6.66
+ - Resultados Corretos matrix_utils: 3 de 3 / Nota 10.00
+ - Valgrinds Corretos matrix_utils: 3 de 3 / Nota 10.00
  - Resultados Corretos completo: 0 de 3 / Nota 0.00
- - Valgrinds Corretos completo: 1 de 3 / Nota 3.33
- - Soma das notas do JoaoHenrique: 43.320
+ - Valgrinds Corretos completo: 2 de 3 / Nota 6.66
+ - Soma das notas do JoaoHenrique: 63.320
  - Campos Considerados: 9
- - Média do JoaoHenrique: 4.81
+ - Média do JoaoHenrique: 7.03
 
 ----------------------------------------------------------------------------
 

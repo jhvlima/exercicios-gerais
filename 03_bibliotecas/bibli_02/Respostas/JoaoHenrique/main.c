@@ -36,7 +36,8 @@ int main()
                 }
                 else
                 {
-                    printf("Error: as dimensoes da matriz nao correspondem");
+                    printf("Error: as dimensoes da matriz nao correspondem\n");
+                    printf("\n");
                 }
                 break;
             }
@@ -50,7 +51,8 @@ int main()
                 }
                 else
                 {
-                    printf("Error: as dimensoes da matriz nao correspondem");
+                    printf("Error: as dimensoes da matriz nao correspondem\n");
+                    printf("\n");
                 }
                 break;
             }
@@ -60,11 +62,12 @@ int main()
                 {
                     int resultado[linha2][coluna1];
                     matrix_multiply(linha1, coluna1, matriz1, linha2, coluna2, matriz2, resultado);
-                    matrix_print(linha2, coluna1, resultado);
+                    matrix_print(linha1, coluna2, resultado);
                 }
                 else
                 {
-                    printf("Error: as dimensoes da matriz nao correspondem");
+                    printf("Error: as dimensoes da matriz nao correspondem\n");
+                    printf("\n");
                 }
                 break;
             }
@@ -85,6 +88,7 @@ int main()
                 else
                 {
                     printf("Erro: Escolha da matriz invalida\n");
+                    printf("\n");
                 }
                 break;
             }
@@ -107,6 +111,7 @@ int main()
                 else
                 {
                     printf("Erro: Escolha da matriz invalida\n");
+                    printf("\n");
                 }
                 break;
             }

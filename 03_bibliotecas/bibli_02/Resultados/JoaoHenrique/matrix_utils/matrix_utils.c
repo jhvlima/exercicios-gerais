@@ -185,7 +185,7 @@ void transpose_matrix(int rows, int cols, int matrix[rows][cols], int result[col
     {
         for (int j = 0; j < cols; j++)
         {
-            result[i][j] = matrix[j][i];
+            result[j][i] = matrix[i][j];
         }
     }
 }

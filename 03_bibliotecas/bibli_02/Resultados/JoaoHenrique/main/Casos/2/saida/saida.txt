@@ -5,23 +5,26 @@
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida:
-Error: as dimensoes da matriz nao correspondem1 - Somar matrizes
+Error: as dimensoes da matriz nao correspondem
+
+1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
 4 - Multiplicacao de uma matriz por escalar
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida:
-Error: as dimensoes da matriz nao correspondem1 - Somar matrizes
+Error: as dimensoes da matriz nao correspondem
+
+1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
 4 - Multiplicacao de uma matriz por escalar
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida:
-|58 64 139|
-|154 0 0|
-|3 3 -16779520|
+|58 64|
+|139 154|
 
 1 - Somar matrizes
 2 - Subtrair matrizes
@@ -41,6 +44,7 @@ Opcao escolhida:
 6 - Encerrar o programa
 Opcao escolhida:
 Erro: Escolha da matriz invalida
+
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
