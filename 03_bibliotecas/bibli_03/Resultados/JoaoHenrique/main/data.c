@@ -196,11 +196,11 @@ int comparaData(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2)
 {
     if (ano1 > ano2 || ((ano1 == ano2) && (mes1 > mes2)) || ((ano1 == ano2) && (mes1 == mes2) && (dia1 > dia2)))
     {
-        return 1;
+        return -1;
     }
     if (ano1 < ano2 || ((ano1 == ano2) && (mes1 < mes2)) || ((ano1 == ano2) && (mes1 == mes2) && (dia1 < dia2)))
     {
-        return -1;
+        return 1;
     }
     return 0;
 }
@@ -270,21 +270,19 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
    
     if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1)
     {
-        for (int i = mes1; i <= mes2; i++)
+        for (int i = mes1; i < mes2; i++)
         {
             soma += numeroDiasMes(i, ano1);
         }
-        soma += dia1 -(numeroDiasMes(mes1, ano1)) - dia2;
+        soma += dia2 - dia1;
     }
-    else
+    else if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1)
     {
-        for (int i = mes2; i <= mes1; i++)
+        for (int i = mes2; i < mes1; i++)
         {
             soma += numeroDiasMes(i, ano1);
         }
-        soma += dia2;
-        soma -= (numeroDiasMes(mes2, ano2)) + dia1;
-
+        soma += dia1 - dia2;
     }
 
     return soma;
