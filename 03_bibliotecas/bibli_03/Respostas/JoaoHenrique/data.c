@@ -117,7 +117,7 @@ void imprimeMesExtenso(int mes)
  */
 void imprimeDataExtenso(int dia, int mes, int ano)
 {
-    printf("%d de ", dia);
+    printf("%02d de ", dia);
     imprimeMesExtenso(mes);
     printf(" de %d\n", ano);
 }
@@ -248,9 +248,13 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
             }
         }
         soma += calculaDiasAteMes(mes1, ano1);
-        soma += dia1;
         soma -= calculaDiasAteMes(mes2, ano2);
-        soma -= numeroDiasMes(mes2, ano1) - dia2;
+        soma -= numeroDiasMes(mes2, ano1) - (dia2 - 1);
+
+        if (mes1 ==  mes2)
+        {
+            soma += dia1;
+        }
     }
     else if (ano1 < ano2)
     {
@@ -263,27 +267,34 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
             }
         }
         soma += calculaDiasAteMes(mes2, ano2);
-        soma += dia2;
         soma -= calculaDiasAteMes(mes1, ano1);
-        soma -= numeroDiasMes(mes1, ano2) - dia1;
+        soma += numeroDiasMes(mes1, ano2) - (dia1 - 1);
+        soma --;
+        if (mes1 ==  mes2)
+        {
+
+            soma += dia2;
+        }
     }
    
-    if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1)
+   else
     {
-        for (int i = mes1; i < mes2; i++)
+        if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1)
         {
-            soma += numeroDiasMes(i, ano1);
+            for (int i = mes1; i < mes2; i++)
+            {
+                soma += numeroDiasMes(i, ano1);
+            }
+            soma += dia2 - dia1;
         }
-        soma += dia2 - dia1;
-    }
-    else if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1)
-    {
-        for (int i = mes2; i < mes1; i++)
+        if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1)
         {
-            soma += numeroDiasMes(i, ano1);
+            for (int i = mes2; i < mes1; i++)
+            {
+                soma += numeroDiasMes(i, ano1);
+            }
+            soma += dia1 - dia2;
         }
-        soma += dia1 - dia2;
     }
-
     return soma;
 }

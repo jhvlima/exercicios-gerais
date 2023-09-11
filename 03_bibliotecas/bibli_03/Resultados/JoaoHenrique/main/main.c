@@ -13,9 +13,9 @@ int main()
         return 0;
     }
 
-    printf("Primeira data:");
+    printf("Primeira data: ");
     imprimeDataExtenso(dia1, mes1, ano1);
-    printf("Segunda data:");
+    printf("Segunda data: ");
     imprimeDataExtenso(dia2, mes2, ano2);
 
     int comparacao = comparaData(dia1, mes1, ano1, dia2, mes2, ano2);
@@ -26,7 +26,7 @@ int main()
     }
     else 
     {
-        if(comparacao == 1)
+        if(comparacao == -1)
         {
             printf("A segunda data eh mais antiga\n");
         }
@@ -39,7 +39,7 @@ int main()
     int diferenca = calculaDiferencaDias(dia1, mes1, ano1, dia2, mes2, ano2);
 
     printf("A diferenca em dias entre as datas eh: ");
-    printf("%d\n", diferenca);
+    printf("%02d dias\n", diferenca);
 
     return 0;
 }
