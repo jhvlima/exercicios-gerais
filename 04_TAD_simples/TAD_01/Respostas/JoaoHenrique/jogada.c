@@ -19,7 +19,6 @@ tJogada LeJogada()
     return jogada;
 }
 
-
 /**
  * Retorna a coordenada X da jogada.
  * 
@@ -27,7 +26,10 @@ tJogada LeJogada()
  * 
  * @return a coordenada X da jogada.
  */
-int ObtemJogadaX(tJogada jogada);
+int ObtemJogadaX(tJogada jogada)
+{
+    return jogada.x;
+}
 
 
 /**
@@ -37,7 +39,10 @@ int ObtemJogadaX(tJogada jogada);
  * 
  * @return a coordenada Y da jogada.
  */
-int ObtemJogadaY(tJogada jogada);
+int ObtemJogadaY(tJogada jogada)
+{
+    return jogada.y;
+}
 
 
 /**
@@ -47,4 +52,12 @@ int ObtemJogadaY(tJogada jogada);
  * 
  * @return 1 se a jogada foi bem sucedida, 0 caso contrário.
  */
-int FoiJogadaBemSucedida(tJogada jogada);
+int FoiJogadaBemSucedida(tJogada jogada)
+{
+    if (jogada.x >= 0 && jogada.x <= 2 && jogada.y >= 0 && jogada.y <= 2)
+    {   
+        return 1;
+    }
+    
+    return 0;
+}
