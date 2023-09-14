@@ -1,8 +1,0 @@
-Resultados/JoaoHenrique/temperature_conversor/main.c: In function ‘main’:
-Resultados/JoaoHenrique/temperature_conversor/main.c:9:5: warning: ‘convertido’ is used uninitialized [-Wuninitialized]
-    9 |     printf("Temperature: %f", convertido);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cc1: fatal error: Resultados/JoaoHenrique/temperature_conversor/temperature_conversor.c: No such file or directory
-compilation terminated.
-gcc: fatal error: input file ‘Resultados/JoaoHenrique/temperature_conversor/temperature_conversor’ is the same as output file
-compilation terminated.

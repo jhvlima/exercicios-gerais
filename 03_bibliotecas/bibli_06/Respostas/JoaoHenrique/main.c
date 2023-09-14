@@ -12,36 +12,50 @@ int main()
     {
         if (to == 'c')
         {
-
+            convertido = convert_temperature(temperatura, convert_kelvin_to_celsius);
         }
         else
         {
-            /* code */
+            convertido = convert_temperature(temperatura, convert_kelvin_to_fahrenheit);
         } 
     }
     else if (from == 'c')
     {
         if (to == 'k')
         {
-            /* code */
+            convertido = convert_temperature(temperatura, convert_celsius_to_kelvin);
         }
         else
         {
-            /* code */
+            convertido = convert_temperature(temperatura, convert_celsius_to_fahrenheit);
         }
     }
     else
     {
         if (to == 'k')
         {
-            /* code */
+            convertido = convert_temperature(temperatura, convert_fahrenheit_to_kelvin);
         }
         else
         {
-            /* code */
+            convertido = convert_temperature(temperatura, convert_fahrenheit_to_celsius);
         }    
     }
     
-    printf("Temperature: %f%c", convertido, to);
+    printf("Temperature: %.2f", convertido);
+    
+    if (to == 'k' || to == 'K')
+    {
+        printf("K");
+    }
+    else if (to == 'c' || to == 'C')
+    {
+        printf("Cº");
+    }
+    else
+    {
+        printf("Fº");
+    }
+    
     return 0;
 }

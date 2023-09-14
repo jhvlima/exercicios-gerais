@@ -1,1 +1,1 @@
-valgrind: Resultados/JoaoHenrique/temperature_conversor/prog: No such file or directory
+Temperature: 355.37K

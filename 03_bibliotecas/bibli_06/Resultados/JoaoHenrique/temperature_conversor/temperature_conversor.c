@@ -75,6 +75,6 @@ float convert_fahrenheit_to_kelvin(float temperature)
 float convert_temperature(float temperature, float convert_func(float temperature))
 {
     float conv;
-    
+    conv = convert_func(temperature);
     return conv;
 }
