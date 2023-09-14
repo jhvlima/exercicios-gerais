@@ -1,0 +1,58 @@
+Resultados/JoaoHenrique/completo/jogo.c: In function ‘ContinuaJogo’:
+Resultados/JoaoHenrique/completo/jogo.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+   84 | }
+      | ^
+Resultados/JoaoHenrique/completo/tabuleiro.c:13:3: error: conflicting types for ‘tTabuleiro’; have ‘struct <anonymous>’
+   13 | } tTabuleiro;
+      |   ^~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:14:3: note: previous declaration of ‘tTabuleiro’ with type ‘tTabuleiro’
+   14 | } tTabuleiro;
+      |   ^~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c:20:12: error: conflicting types for ‘CriaTabuleiro’; have ‘tTabuleiro()’
+   20 | tTabuleiro CriaTabuleiro()
+      |            ^~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:21:12: note: previous declaration of ‘CriaTabuleiro’ with type ‘tTabuleiro()’
+   21 | tTabuleiro CriaTabuleiro();
+      |            ^~~~~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c:49:12: error: conflicting types for ‘MarcaPosicaoTabuleiro’; have ‘tTabuleiro(tTabuleiro,  int,  int,  int)’
+   49 | tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y)
+      |            ^~~~~~~~~~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:34:12: note: previous declaration of ‘MarcaPosicaoTabuleiro’ with type ‘tTabuleiro(tTabuleiro,  int,  int,  int)’
+   34 | tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c: In function ‘MarcaPosicaoTabuleiro’:
+Resultados/JoaoHenrique/completo/tabuleiro.c:51:14: error: subscripted value is neither array nor pointer nor vector
+   51 |     tabuleiro[x][y] = peca;
+      |              ^
+Resultados/JoaoHenrique/completo/tabuleiro.c: At top level:
+Resultados/JoaoHenrique/completo/tabuleiro.c:63:5: error: conflicting types for ‘TemPosicaoLivreTabuleiro’; have ‘int(tTabuleiro)’
+   63 | int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:44:5: note: previous declaration of ‘TemPosicaoLivreTabuleiro’ with type ‘int(tTabuleiro)’
+   44 | int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c:89:5: error: conflicting types for ‘EstaMarcadaPosicaoPecaTabuleiro’; have ‘int(tTabuleiro,  int,  int,  int)’
+   89 | int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:57:5: note: previous declaration of ‘EstaMarcadaPosicaoPecaTabuleiro’ with type ‘int(tTabuleiro,  int,  int,  int)’
+   57 | int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c:120:5: error: conflicting types for ‘EstaLivrePosicaoTabuleiro’; have ‘int(tTabuleiro,  int,  int)’
+  120 | int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:69:5: note: previous declaration of ‘EstaLivrePosicaoTabuleiro’ with type ‘int(tTabuleiro,  int,  int)’
+   69 | int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/JoaoHenrique/completo/tabuleiro.c:152:6: error: conflicting types for ‘ImprimeTabuleiro’; have ‘void(tTabuleiro)’
+  152 | void ImprimeTabuleiro(tTabuleiro tabuleiro)
+      |      ^~~~~~~~~~~~~~~~
+In file included from Resultados/JoaoHenrique/completo/tabuleiro.c:2:
+Resultados/JoaoHenrique/completo/tabuleiro.h:86:6: note: previous declaration of ‘ImprimeTabuleiro’ with type ‘void(tTabuleiro)’
+   86 | void ImprimeTabuleiro(tTabuleiro tabuleiro);
+      |      ^~~~~~~~~~~~~~~~

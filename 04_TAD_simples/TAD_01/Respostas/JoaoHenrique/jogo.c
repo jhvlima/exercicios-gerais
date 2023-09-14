@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include "jogador.h"
 #include "tabuleiro.h"
-
-typedef struct{
-    tTabuleiro tabuleiro;
-    tJogador jogador1;
-    tJogador jogador2;
-    
-} tJogo;
+#include "jogo.h"
 
 /**
  * Cria um jogo e retorna o jogo criado.
@@ -18,8 +12,9 @@ tJogo CriaJogo()
 {
     tJogo jogo;
     jogo.tabuleiro = CriaTabuleiro();
-    jogo.jogador1 = CriaJogador(1);
-    jogo.jogador2 = CriaJogador(2);
+    jogo.jogador1 = CriaJogador(ID_JOGADOR_1);
+    jogo.jogador2 = CriaJogador(ID_JOGADOR_2);
+    return jogo;
 }
 
 
@@ -28,7 +23,32 @@ tJogo CriaJogo()
  * 
  * @param jogo o jogo a ser iniciado.
  */
-void ComecaJogo(tJogo jogo);
+void ComecaJogo(tJogo jogo)
+{
+    int jogador1Venceu = 0, jogador2Venceu = 0;
+        while( 1 ){
+
+            jogo.tabuleiro = JogaJogador(jogo.jogador1, jogo.tabuleiro); 
+            jogador1Venceu = VenceuJogador(jogo.jogador1, jogo.tabuleiro);
+            ImprimeTabuleiro(jogo.tabuleiro);
+
+            if (jogador1Venceu || AcabouJogo(jogo))
+                break;
+            jogo.tabuleiro = JogaJogador(jogo.jogador2, jogo.tabuleiro); 
+            jogador2Venceu = VenceuJogador(jogo.jogador2, jogo.tabuleiro);
+            ImprimeTabuleiro(jogo.tabuleiro);
+            
+            if (jogador2Venceu || AcabouJogo(jogo))
+                break;
+        }
+
+        if (jogador1Venceu)
+            printf("JOGADOR 1 Venceu!\n");
+        else if (jogador2Venceu)
+            printf("JOGADOR 2 Venceu!\n");
+        else 
+            printf("Sem vencedor!\n");
+}
 
 
 /**
@@ -38,7 +58,10 @@ void ComecaJogo(tJogo jogo);
  * 
  * @return 1 se o jogo acabou, 0 caso contrário.
  */
-int AcabouJogo(tJogo jogo);
+int AcabouJogo(tJogo jogo)
+{
+    return !TemPosicaoLivreTabuleiro(jogo.tabuleiro);
+}
 
 
 /**
@@ -52,10 +75,10 @@ int ContinuaJogo()
     scanf("%c", &car);
     if (car == 's')
     {
-        retrun 1;
+        return 1;
     }
     if (car == 'n')
     {
-        retrun 0;
+        return 0;
     }
 }
