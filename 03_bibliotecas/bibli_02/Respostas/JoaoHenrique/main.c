@@ -36,8 +36,7 @@ int main()
                 }
                 else
                 {
-                    printf("Erro: as dimensoes da matriz nao correspondem\n");
-                    printf("\n");
+                    printf("Error: as dimensoes da matriz nao correspondem");
                 }
                 break;
             }
@@ -51,8 +50,7 @@ int main()
                 }
                 else
                 {
-                    printf("Erro: as dimensoes da matriz nao correspondem\n");
-                    printf("\n");
+                    printf("Error: as dimensoes da matriz nao correspondem");
                 }
                 break;
             }
@@ -62,12 +60,11 @@ int main()
                 {
                     int resultado[linha2][coluna1];
                     matrix_multiply(linha1, coluna1, matriz1, linha2, coluna2, matriz2, resultado);
-                    matrix_print(linha1, coluna2, resultado);
+                    matrix_print(linha2, coluna1, resultado);
                 }
                 else
                 {
-                    printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n");
-                    printf("\n");
+                    printf("Error: as dimensoes da matriz nao correspondem");
                 }
                 break;
             }
@@ -88,20 +85,29 @@ int main()
                 else
                 {
                     printf("Erro: Escolha da matriz invalida\n");
-                    printf("\n");
                 }
                 break;
             }
             case 5:
             {   
-                int resultado1[coluna1][linha1];
-                transpose_matrix(linha1, coluna1, matriz1, resultado1);
-                matrix_print(coluna1, linha1, resultado1);
-
-                int resultado2[coluna2][linha2];
-                transpose_matrix(linha2, coluna2, matriz2, resultado2);
-                matrix_print(coluna2, linha2, resultado2);
-
+                int matriz = 0;
+                scanf("%d", &matriz);
+                if (matriz == 1)
+                {
+                    int resultado[linha1][coluna1];
+                    transpose_matrix(linha1, coluna1, matriz1, resultado);
+                    matrix_print(linha1, coluna1, resultado);
+                }
+                else if (matriz == 2)
+                {
+                    int resultado[linha2][coluna2];
+                    transpose_matrix(linha2, coluna2, matriz2, resultado);
+                    matrix_print(linha2, coluna2, resultado);
+                }
+                else
+                {
+                    printf("Erro: Escolha da matriz invalida\n");
+                }
                 break;
             }
             case 6:

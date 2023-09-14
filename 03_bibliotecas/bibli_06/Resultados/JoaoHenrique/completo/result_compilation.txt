@@ -1,0 +1,8 @@
+Resultados/JoaoHenrique/completo/main.c: In function ‘main’:
+Resultados/JoaoHenrique/completo/main.c:9:5: warning: ‘convertido’ is used uninitialized [-Wuninitialized]
+    9 |     printf("Temperature: %f", convertido);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: fatal error: Resultados/JoaoHenrique/completo/temperature_conversor.c: No such file or directory
+compilation terminated.
+gcc: fatal error: input file ‘Resultados/JoaoHenrique/completo/temperature_conversor’ is the same as output file
+compilation terminated.
