@@ -7,7 +7,12 @@
 int main()
 {
     tJogo jogo = CriaJogo();
-    ComecaJogo(jogo);
-    
-    return 0;
+    while (1)
+    {
+        ComecaJogo(jogo);
+        if (!ContinuaJogo(jogo))
+        {
+            return 0;
+        }
+    }
 }

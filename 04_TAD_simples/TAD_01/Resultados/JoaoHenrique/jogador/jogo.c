@@ -71,7 +71,9 @@ int AcabouJogo(tJogo jogo)
  */
 int ContinuaJogo()
 {
+    printf("Jogar novamente? (s,n)\n");
     char car;
+    scanf("%*c");
     scanf("%c", &car);
     if (car == 's')
     {
@@ -81,4 +83,5 @@ int ContinuaJogo()
     {
         return 0;
     }
+    return ContinuaJogo();
 }

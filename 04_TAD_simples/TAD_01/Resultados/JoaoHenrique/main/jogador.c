@@ -1,15 +1,8 @@
 #include <stdio.h>
+#include "jogador.h"
 #include "tabuleiro.h"
 #include "jogada.h"
 
-
-#define ID_JOGADOR_1 1
-#define ID_JOGADOR_2 2
-
-
-typedef struct{
-    int id;
-} tJogador;
 
 /**
  * Cria um jogador com o id passado como parâmetro e retorna o jogador criado.

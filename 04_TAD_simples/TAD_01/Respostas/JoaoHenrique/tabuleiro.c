@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include "tabuleiro.h"
 
-#define TAM_TABULEIRO 3
-#define PECA_1 1
-#define PECA_2 2
-
-typedef struct{
-    char posicoes[TAM_TABULEIRO][TAM_TABULEIRO];
-    char peca1;
-    char peca2;
-    char pecaVazio;
-} tTabuleiro;
-
 /**
  * Cria um tabuleiro e retorna o tabuleiro criado.
  * 
@@ -48,7 +37,14 @@ tTabuleiro CriaTabuleiro()
  */
 tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y)
 {
-    tabuleiro[x][y] = peca;
+    if (peca == PECA_1)
+    {
+        tabuleiro.posicoes[y][x] = tabuleiro.peca1;
+    }
+    if (peca == PECA_2)
+    {
+        tabuleiro.posicoes[y][x] = tabuleiro.peca2;
+    }
     return tabuleiro;
 }
 
@@ -90,7 +86,7 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca
 {
     if (peca == PECA_1)
     {
-        if (tabuleiro.posicoes[x][y] == tabuleiro.peca1)
+        if (tabuleiro.posicoes[y][x] == tabuleiro.peca1)
         {
             return 1;
         }
@@ -98,7 +94,7 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca
     
     if (peca == PECA_2)
     {
-        if (tabuleiro.posicoes[x][y] == tabuleiro.peca2)
+        if (tabuleiro.posicoes[y][x] == tabuleiro.peca2)
         {
             return 1;
         }
@@ -119,7 +115,7 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca
  */
 int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y)
 {
-    if (tabuleiro.posicoes[x][y] == tabuleiro.pecaVazio)
+    if (tabuleiro.posicoes[y][x] == tabuleiro.pecaVazio)
     {
         return 1;
     }
@@ -156,7 +152,7 @@ void ImprimeTabuleiro(tTabuleiro tabuleiro)
         printf("\t");
         for (int j = 0; j < TAM_TABULEIRO; j++)
         {
-            printf("%c", tabuleiro.posicoes[i][j]);
+            printf("%c", tabuleiro.posicoes[j][i]);
         }
         printf("\n");
     }
