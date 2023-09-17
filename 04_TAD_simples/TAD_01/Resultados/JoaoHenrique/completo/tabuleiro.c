@@ -152,7 +152,7 @@ void ImprimeTabuleiro(tTabuleiro tabuleiro)
         printf("\t");
         for (int j = 0; j < TAM_TABULEIRO; j++)
         {
-            printf("%c", tabuleiro.posicoes[j][i]);
+            printf("%c", tabuleiro.posicoes[i][j]);
         }
         printf("\n");
     }

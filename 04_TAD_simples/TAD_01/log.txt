@@ -177,27 +177,27 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta jogador / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta jogador / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta jogador / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta jogador / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta jogador / Caso 5:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta jogador / Caso 6:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogador/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta jogo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogo/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -221,7 +221,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta jogo / Caso 6:
  - Arquivo de output gerado: Resultados/JoaoHenrique/jogo/Casos/6/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -249,51 +249,51 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta tabuleiro / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta tabuleiro / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta tabuleiro / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta tabuleiro / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta tabuleiro / Caso 5:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta tabuleiro / Caso 6:
  - Arquivo de output gerado: Resultados/JoaoHenrique/tabuleiro/Casos/6/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 129160.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 6:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
 
 #######################################
 RESULTADOS FINAIS
@@ -306,19 +306,19 @@ Nome 0: JoaoHenrique
  - Linkagens Corretas: 6 de 6 / Nota 10.00
  - Resultados Corretos jogada: 6 de 6 / Nota 10.00
  - Valgrinds Corretos jogada: 6 de 6 / Nota 10.00
- - Resultados Corretos jogador: 0 de 6 / Nota 0.00
- - Valgrinds Corretos jogador: 3 de 6 / Nota 5.00
- - Resultados Corretos jogo: 5 de 6 / Nota 8.33
+ - Resultados Corretos jogador: 6 de 6 / Nota 10.00
+ - Valgrinds Corretos jogador: 6 de 6 / Nota 10.00
+ - Resultados Corretos jogo: 6 de 6 / Nota 10.00
  - Valgrinds Corretos jogo: 6 de 6 / Nota 10.00
  - Resultados Corretos main: 6 de 6 / Nota 10.00
  - Valgrinds Corretos main: 6 de 6 / Nota 10.00
- - Resultados Corretos tabuleiro: 0 de 6 / Nota 0.00
+ - Resultados Corretos tabuleiro: 6 de 6 / Nota 10.00
  - Valgrinds Corretos tabuleiro: 6 de 6 / Nota 10.00
- - Resultados Corretos completo: 0 de 6 / Nota 0.00
- - Valgrinds Corretos completo: 3 de 6 / Nota 5.00
- - Soma das notas do JoaoHenrique: 108.330
+ - Resultados Corretos completo: 6 de 6 / Nota 10.00
+ - Valgrinds Corretos completo: 6 de 6 / Nota 10.00
+ - Soma das notas do JoaoHenrique: 150.000
  - Campos Considerados: 15
- - Média do JoaoHenrique: 7.22
+ - Média do JoaoHenrique: 10.00
 
 ----------------------------------------------------------------------------
 

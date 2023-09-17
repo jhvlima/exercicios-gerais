@@ -28,29 +28,50 @@ tJogador CriaJogador(int idJogador)
  */
 tTabuleiro JogaJogador(tJogador jogador, tTabuleiro tabuleiro)
 {
-    
-    tJogada jogada = LeJogada();
-    
-    if(!FoiJogadaBemSucedida(jogada))
+    int x, y, passou = 1;
+    tJogada jogada;
+
+    while (1)
     {
-        printf("Formato invalido!\n");
-        return tabuleiro;
+        if (jogador.id == ID_JOGADOR_1)
+        {
+            printf("Jogador 1\n");
+        }
+        if (jogador.id == ID_JOGADOR_2)
+        {
+            printf("Jogador 2\n");
+        }
+
+        jogada = LeJogada();
+        
+        if(!FoiJogadaBemSucedida(jogada))
+        {
+            printf("Formato invalido!\n");
+            continue;
+        }
+
+        x = ObtemJogadaX(jogada);
+        y = ObtemJogadaY(jogada);
+
+        if (!EhPosicaoValidaTabuleiro(x, y))
+        {
+            printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
+            continue;
+        }
+
+        if (!EstaLivrePosicaoTabuleiro(tabuleiro, x, y))
+        {
+            printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", x, y);
+            continue;
+        }
+        if (passou == 1)
+        {
+            break;
+        }
+        
     }
 
-    int x = ObtemJogadaX(jogada);
-    int y = ObtemJogadaY(jogada);
-
-    if (!EhPosicaoValidaTabuleiro(x, y))
-    {
-        printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
-        return tabuleiro;
-    }
-
-    if (!EstaLivrePosicaoTabuleiro(tabuleiro, x, y))
-    {
-        printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", x, y);
-        return tabuleiro;
-    }
+    printf("Jogada [%d,%d]!\n", x, y);
 
     int peca = PECA_1;
 

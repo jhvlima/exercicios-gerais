@@ -316,9 +316,6 @@ Jogada [0,2]!
 	X--
 JOGADOR 1 Venceu!
 Jogar novamente? (s,n)
-Jogar novamente? (s,n)
-Jogar novamente? (s,n)
-Jogar novamente? (s,n)
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,0]!

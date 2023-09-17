@@ -73,15 +73,17 @@ int ContinuaJogo()
 {
     printf("Jogar novamente? (s,n)\n");
     char car;
-    scanf("%*c");
-    scanf("%c", &car);
-    if (car == 's')
+    while (1)
     {
-        return 1;
+        scanf("%*c");
+        scanf("%c", &car);
+        if (car == 's')
+        {
+            return 1;
+        }
+        if (car == 'n')
+        {
+            return 0;
+        }
     }
-    if (car == 'n')
-    {
-        return 0;
-    }
-    return ContinuaJogo();
 }

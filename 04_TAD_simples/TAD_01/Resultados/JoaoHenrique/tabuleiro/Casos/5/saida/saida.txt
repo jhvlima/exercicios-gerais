@@ -13,45 +13,45 @@ Jogada [1,1]!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,0]!
-	X--
-	X0-
+	XX-
+	-0-
 	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,0]!
-	X--
-	X0-
-	0--
+	XX0
+	-0-
+	---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,2]!
-	X-X
-	X0-
-	0--
+	XX0
+	-0-
+	X--
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,1]!
-	X0X
-	X0-
-	0--
+	XX0
+	00-
+	X--
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,1]!
-	X0X
-	X0-
-	0X-
+	XX0
+	00X
+	X--
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,2]!
-	X0X
-	X00
-	0X-
+	XX0
+	00X
+	X0-
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
+	XX0
+	00X
 	X0X
-	X00
-	0XX
 Sem vencedor!
 Jogar novamente? (s,n)
 Jogador 1
@@ -69,39 +69,39 @@ Jogada [0,0]!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,0]!
-	0--
+	0-X
 	-X-
-	X--
+	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,0]!
-	0--
-	0X-
-	X--
+	00X
+	-X-
+	---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
-	0--
-	0X-
-	X-X
+	00X
+	-X-
+	--X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,1]!
-	00-
+	00X
 	0X-
-	X-X
+	--X
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,2]!
-	00-
-	0XX
-	X-X
+	00X
+	0X-
+	-XX
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,1]!
-	00-
-	0XX
-	X0X
+	00X
+	0X0
+	-XX
 Jogador 1
 Digite uma posicao (x e y):
 Posicao invalida (OCUPADA - [2,0] )!
@@ -127,8 +127,8 @@ Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,2]!
 	00X
-	0XX
-	X0X
+	0X0
+	XXX
 JOGADOR 1 Venceu!
 Jogar novamente? (s,n)
 Jogador 1
@@ -146,21 +146,21 @@ Jogada [1,1]!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,0]!
-	X--
-	X0-
+	XX-
+	-0-
 	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,0]!
-	X--
-	X0-
-	0--
+	XX0
+	-0-
+	---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,1]!
-	XX-
+	XX0
 	X0-
-	0--
+	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,2]!
@@ -184,21 +184,21 @@ Jogada [1,1]!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,0]!
-	X--
-	X0-
+	XX-
+	-0-
 	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,0]!
-	X--
-	X0-
-	0--
+	XX0
+	-0-
+	---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,1]!
-	XX-
+	XX0
 	X0-
-	0--
+	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,2]!
@@ -222,32 +222,32 @@ Jogada [0,0]!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,0]!
-	0--
+	0-X
 	-X-
-	X--
+	---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,0]!
-	0--
-	0X-
-	X--
+	00X
+	-X-
+	---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
-	0--
-	0X-
-	X-X
+	00X
+	-X-
+	--X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,2]!
-	0--
-	0X0
-	X-X
+	00X
+	-X-
+	-0X
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,1]!
-	0--
-	0X0
-	XXX
+	00X
+	-XX
+	-0X
 JOGADOR 1 Venceu!
 Jogar novamente? (s,n)
