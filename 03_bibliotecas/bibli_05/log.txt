@@ -77,7 +77,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Ok!
+ - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -124,15 +124,15 @@ Nome 0: JoaoHenrique
  - Arquivos Corretos: 3 de 3 / Nota 10.00
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
- - Resultados Corretos main: 1 de 4 / Nota 2.50
+ - Resultados Corretos main: 0 de 4 / Nota 0.00
  - Valgrinds Corretos main: 4 de 4 / Nota 10.00
  - Resultados Corretos string_utils: 1 de 4 / Nota 2.50
  - Valgrinds Corretos string_utils: 4 de 4 / Nota 10.00
  - Resultados Corretos completo: 1 de 4 / Nota 2.50
  - Valgrinds Corretos completo: 4 de 4 / Nota 10.00
- - Soma das notas do JoaoHenrique: 67.500
+ - Soma das notas do JoaoHenrique: 65.000
  - Campos Considerados: 9
- - Média do JoaoHenrique: 7.50
+ - Média do JoaoHenrique: 7.22
 
 ----------------------------------------------------------------------------
 
