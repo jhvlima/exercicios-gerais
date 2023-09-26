@@ -1,0 +1,49 @@
+Resultados/JoaoHenrique/eleitor/candidato.c: In function ‘CriaCandidato’:
+Resultados/JoaoHenrique/eleitor/candidato.c:14:20: error: assignment to expression with array type
+   14 |     candidato.nome = nome;
+      |                    ^
+Resultados/JoaoHenrique/eleitor/candidato.c:15:23: error: assignment to expression with array type
+   15 |     candidato.partido = partido;
+      |                       ^
+Resultados/JoaoHenrique/eleitor/candidato.c: In function ‘LeCandidato’:
+Resultados/JoaoHenrique/eleitor/candidato.c:31:15: warning: format ‘%[^,’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
+   31 |     scanf("%[^,] %*[^A-Za-z] %[^,] %*[^A-Za-z] %c%*c%d", &nome, &partido, &cargo, &id);
+      |            ~~~^                                          ~~~~~
+      |               |                                          |
+      |               char *                                     char (*)[100]
+Resultados/JoaoHenrique/eleitor/candidato.c:31:33: warning: format ‘%[^,’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[100]’ [-Wformat=]
+   31 |     scanf("%[^,] %*[^A-Za-z] %[^,] %*[^A-Za-z] %c%*c%d", &nome, &partido, &cargo, &id);
+      |                              ~~~^                               ~~~~~~~~
+      |                                 |                               |
+      |                                 char *                          char (*)[100]
+Resultados/JoaoHenrique/eleitor/eleicao.c: In function ‘InicializaEleicao’:
+Resultados/JoaoHenrique/eleitor/eleicao.c:20:17: error: expected expression before ‘%’ token
+   20 |     scanf("%d", %qntCandidatos);
+      |                 ^
+Resultados/JoaoHenrique/eleitor/eleicao.c:24:20: error: expected identifier or ‘(’ before ‘)’ token
+   24 |         tCandidato()
+      |                    ^
+Resultados/JoaoHenrique/eleitor/eleicao.c: In function ‘ImprimeResultadoEleicao’:
+Resultados/JoaoHenrique/eleitor/eleicao.c:51:22: error: ‘candidato’ undeclared (first use in this function); did you mean ‘tCandidato’?
+   51 |     ImprimeCandidato(candidato, porcentagem);
+      |                      ^~~~~~~~~
+      |                      tCandidato
+Resultados/JoaoHenrique/eleitor/eleicao.c:51:22: note: each undeclared identifier is reported only once for each function it appears in
+Resultados/JoaoHenrique/eleitor/eleicao.c:51:33: error: ‘porcentagem’ undeclared (first use in this function)
+   51 |     ImprimeCandidato(candidato, porcentagem);
+      |                                 ^~~~~~~~~~~
+Resultados/JoaoHenrique/eleitor/eleicao.c:56:43: error: ‘nulos’ undeclared (first use in this function)
+   56 |     printf("- NULOS E BRANCOS: %d, %d\n", nulos, brancos);
+      |                                           ^~~~~
+Resultados/JoaoHenrique/eleitor/eleicao.c:56:50: error: ‘brancos’ undeclared (first use in this function)
+   56 |     printf("- NULOS E BRANCOS: %d, %d\n", nulos, brancos);
+      |                                                  ^~~~~~~
+Resultados/JoaoHenrique/eleitor/eleicao.c: In function ‘InicializaEleicao’:
+Resultados/JoaoHenrique/eleitor/eleicao.c:57:1: error: expected declaration or statement at end of input
+   57 | }
+      | ^
+Resultados/JoaoHenrique/eleitor/eleicao.c:58: warning: control reaches end of non-void function [-Wreturn-type]
+At top level:
+Resultados/JoaoHenrique/eleitor/eleicao.c:47:6: warning: ‘ImprimeResultadoEleicao’ defined but not used [-Wunused-function]
+   47 | void ImprimeResultadoEleicao(tEleicao eleicao)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
