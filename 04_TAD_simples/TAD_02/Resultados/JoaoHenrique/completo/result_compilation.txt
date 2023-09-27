@@ -1,10 +1,7 @@
 Resultados/JoaoHenrique/completo/candidato.c: In function ‘ImprimeCandidato’:
-Resultados/JoaoHenrique/completo/candidato.c:118:43: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
-  118 |         printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
-      |                                           ^~
-Resultados/JoaoHenrique/completo/candidato.c:122:43: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
-  122 |         printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
-      |                                           ^~
+Resultados/JoaoHenrique/completo/candidato.c:116:39: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+  116 |     printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
+      |                                       ^~
 Resultados/JoaoHenrique/completo/eleicao.c: In function ‘InicializaEleicao’:
 Resultados/JoaoHenrique/completo/eleicao.c:28:13: error: too few arguments to function ‘CriaCandidato’
    28 |             CriaCandidato()

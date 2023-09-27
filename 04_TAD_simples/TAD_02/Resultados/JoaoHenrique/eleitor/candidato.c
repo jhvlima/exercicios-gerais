@@ -113,13 +113,5 @@ float CalculaPercentualVotos(tCandidato candidato, int totalVotos)
  */
 void ImprimeCandidato (tCandidato candidato, float percentualVotos)
 {
-    if (candidato.cargo == 'P')
-    {
-        printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
-    }
-    else
-    {
-        printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
-    }
-    
+    printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
 }
