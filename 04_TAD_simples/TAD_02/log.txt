@@ -52,7 +52,6 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Pasta candidato:
  - Compilando o arquivo candidato.c do aluno, gerando o candidato.o
- - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/candidato/candidato.c está correto.
  - Compilando o arquivo eleicao.c do aluno, gerando o eleicao.o
  - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/candidato/eleicao.c está correto.
  - Compilando o arquivo eleitor.c do aluno, gerando o eleitor.o
@@ -60,7 +59,6 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/result_compilation.txt.
  - Pasta eleicao:
  - Compilando o arquivo candidato.c do aluno, gerando o candidato.o
- - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/eleicao/candidato.c está correto.
  - Compilando o arquivo eleicao.c do aluno, gerando o eleicao.o
  - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/eleicao/eleicao.c está correto.
  - Compilando o arquivo eleitor.c do aluno, gerando o eleitor.o
@@ -68,7 +66,6 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Arquivo de output gerado: Resultados/JoaoHenrique/eleicao/result_compilation.txt.
  - Pasta eleitor:
  - Compilando o arquivo candidato.c do aluno, gerando o candidato.o
- - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/eleitor/candidato.c está correto.
  - Compilando o arquivo eleicao.c do aluno, gerando o eleicao.o
  - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/eleitor/eleicao.c está correto.
  - Compilando o arquivo eleitor.c do aluno, gerando o eleitor.o
@@ -76,7 +73,6 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Arquivo de output gerado: Resultados/JoaoHenrique/eleitor/result_compilation.txt.
  - Pasta main:
  - Compilando o arquivo candidato.c do aluno, gerando o candidato.o
- - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/main/candidato.c está correto.
  - Compilando o arquivo eleicao.c do aluno, gerando o eleicao.o
  - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/main/eleicao.c está correto.
  - Compilando o arquivo eleitor.c do aluno, gerando o eleitor.o
@@ -84,13 +80,12 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Arquivo de output gerado: Resultados/JoaoHenrique/main/result_compilation.txt.
  - Pasta completo:
  - Compilando o arquivo candidato.c do aluno, gerando o candidato.o
- - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/completo/candidato.c está correto.
  - Compilando o arquivo eleicao.c do aluno, gerando o eleicao.o
  - Erro de compilação! Verifique se o arquivo Resultados/JoaoHenrique/completo/eleicao.c está correto.
  - Compilando o arquivo eleitor.c do aluno, gerando o eleitor.o
  - Compilando o arquivo main.c do aluno, gerando o main.o
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/result_compilation.txt.
- - Arquivos Compilados: Erro!: 10 arquivos com erros de compilacao.
+ - Arquivos Compilados: Erro!: 5 arquivos com erros de compilacao.
  - Copiando os arquivos objetos do professor para cada subpasta do Resultado do JoaoHenrique:
  - Copiando o Gabarito-obj/candidato.o para a pasta Resultados/JoaoHenrique/eleicao
  - Copiando o Gabarito-obj/candidato.o para a pasta Resultados/JoaoHenrique/eleitor
@@ -109,7 +104,7 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
 LINKANDO OS ARQUIVOS COMPILADOS:
  - Pasta candidato:
  - Gerando o binário prog linkando com o(s) arquivo(s) candidato/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/result_linking.txt
  - Pasta eleicao:
  - Gerando o binário prog linkando com o(s) arquivo(s) eleicao/*.o
@@ -127,39 +122,49 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
  - Arquivos Linkados: Erro! Binário prog não gerado.
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/result_linking.txt
- - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
+ - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta candidato / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 248.
  - Resultado para o saida.txt: Incorreto!
  - Pasta candidato / Caso 10:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/10/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 130.
  - Resultado para o saida.txt: Incorreto!
  - Pasta candidato / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 117.
  - Resultado para o saida.txt: Incorreto!
  - Pasta candidato / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 12.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 7:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/7/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 11.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 8:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/8/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 6.
+ - Resultado para o saida.txt: Ok!
  - Pasta candidato / Caso 9:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/JoaoHenrique/candidato/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta eleicao / Caso 1:
  - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente.
  - Resultado para o saida.txt: Incorreto!
@@ -308,10 +313,10 @@ RESULTADOS FINAIS
 ----------------------------------------------------------------------------
 Nome 0: JoaoHenrique
  - Arquivos Corretos: 7 de 7 / Nota 10.00
- - Compilações Corretas: 10 de 20 / Nota 5.00
- - Linkagens Corretas: 2 de 5 / Nota 4.00
- - Resultados Corretos candidato: 0 de 10 / Nota 0.00
- - Valgrinds Corretos candidato: 0 de 10 / Nota 0.00
+ - Compilações Corretas: 15 de 20 / Nota 7.50
+ - Linkagens Corretas: 3 de 5 / Nota 6.00
+ - Resultados Corretos candidato: 7 de 10 / Nota 7.00
+ - Valgrinds Corretos candidato: 4 de 10 / Nota 4.00
  - Resultados Corretos eleicao: 0 de 10 / Nota 0.00
  - Valgrinds Corretos eleicao: 0 de 10 / Nota 0.00
  - Resultados Corretos eleitor: 10 de 10 / Nota 10.00
@@ -320,9 +325,9 @@ Nome 0: JoaoHenrique
  - Valgrinds Corretos main: 10 de 10 / Nota 10.00
  - Resultados Corretos completo: 0 de 10 / Nota 0.00
  - Valgrinds Corretos completo: 0 de 10 / Nota 0.00
- - Soma das notas do JoaoHenrique: 59.000
+ - Soma das notas do JoaoHenrique: 74.500
  - Campos Considerados: 13
- - Média do JoaoHenrique: 4.53
+ - Média do JoaoHenrique: 5.73
 
 ----------------------------------------------------------------------------
 

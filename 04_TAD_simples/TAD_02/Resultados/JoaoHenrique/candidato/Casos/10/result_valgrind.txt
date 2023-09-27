@@ -1,0 +1,2 @@
+Test Case: Resultados/JoaoHenrique/candidato/Casos/10
+Valgrind result: allocs: 2 frees: 2 errors: 130 contexts: 98

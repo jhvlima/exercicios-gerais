@@ -1,1 +1,5 @@
-valgrind: Resultados/JoaoHenrique/candidato/prog: No such file or directory
+- PRESIDENTE ELEITO: 
+Edsger Dijkstra (Partido do Melhor Caminho (PMC)), 4 voto(s), 66%
+- GOVERNADOR ELEITO: 
+Ada Lovelace (Gamers Unidos (GU)), 3 voto(s), 50%
+- NULOS E BRANCOS: 0, 0

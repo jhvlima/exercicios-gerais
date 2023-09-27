@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "candidato.h"
 /**
  * @brief Cria um candidato com os dados informados.
@@ -11,8 +12,8 @@
 tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id)
 {
     tCandidato candidato;
-    candidato.nome = nome;
-    candidato.partido = partido;
+    strcpy(candidato.nome, nome);
+    strcpy(candidato.partido, partido);
     candidato.cargo = cargo;
     candidato.id = id;
     return candidato;
@@ -24,12 +25,12 @@ tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id)
  */
 tCandidato LeCandidato()
 {
-    char nome[100];
-    char partido[100];
+    char nome[256];
+    char partido[256];
     char cargo;
     int id;
-    scanf("%[^,] %*[^A-Za-z] %[^,] %*[^A-Za-z] %c%*c%d", &nome, &partido, &cargo, &id);
-    tCandidato  candidato = LeCandidato(nome, partido, cargo, id);
+    scanf("%[^,] %*[^A-Za-z] %[^,] %*[^A-Za-z] %c%*c%d", nome, partido, &cargo, &id);
+    tCandidato  candidato = CriaCandidato(nome, partido, cargo, id);
     return candidato;
 }
 
@@ -114,11 +115,11 @@ void ImprimeCandidato (tCandidato candidato, float percentualVotos)
 {
     if (candidato.cargo == 'P')
     {
-        printf("- PRESIDENTE ELEITO: %s (%s), %d voto(s), %f", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
+        printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
     }
     else
     {
-        printf("- GOVERNADOR ELEITO: %s (%s), %d voto(s), %f", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
+        printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
     }
     
 }

@@ -16,14 +16,19 @@
 tEleicao InicializaEleicao()
 {
     tEleicao eleicao;
-    int qntCandidatos;
-    scanf("%d", %qntCandidatos);
+    tCandidato candidato;
+    int qntCandidatos, totalPresidentes = 0, totalGovernadores = 0, totalEleitores = 0;
+    scanf("%d", &qntCandidatos);
 
     for (int i = 0; i < qntCandidatos; i++)
     {
-        tCandidato()
+        candidato = LeCandidato();
+        if (ObtemCargo(candidato) == 'P')
+        {
+            CriaCandidato()
+        }
+        
     }
-
     eleicao.votosBrancosPresidente = 0;
     eleicao.votosNulosPresidente = 0;
     eleicao.votosBrancosGovernador = 0;
@@ -38,7 +43,11 @@ tEleicao InicializaEleicao()
  * @param eleicao Eleição a ser realizada.
  * @return Eleição com os resultados da votação.
  */
-tEleicao RealizaEleicao(tEleicao eleicao);
+tEleicao RealizaEleicao(tEleicao eleicao)
+{
+
+    return eleicao;
+}
 
 /**
  * @brief Imprime o resultado da eleição na tela a partir da aparucao dos votos.
