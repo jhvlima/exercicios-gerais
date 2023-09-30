@@ -10,9 +10,7 @@
  */
 void LeIntervalo(int * m, int * n)
 {
-    int ini, fim;
     scanf("%d %d", m, n);
-    m = &ini, n = &fim;
 }
 
 /**
