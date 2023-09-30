@@ -10,7 +10,9 @@
  */
 void LeIntervalo(int * m, int * n)
 {
-    scanf("%d %d", m, n);
+    int inicio , fim;
+    scanf("%d %d", &inicio, &fim);
+    m = &inicio, n = &fim;
 }
 
 /**
