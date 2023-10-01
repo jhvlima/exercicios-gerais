@@ -39,7 +39,6 @@ int EhPrimo(int n)
     {
         return 1;
     }
-    
 }
 
 /**
@@ -55,14 +54,14 @@ int EhPrimo(int n)
 void ObtemMaiorEMenorPrimo(int m, int n, int *menor, int *maior)
 {
     int achouMenor = 0;
-    for (int i = m; i < n; i++)
+    for (int i = m; i <= n; i++)
     {
         if (EhPrimo(i))
         {
-            maior = &i;
+            *maior = i;
             if (!achouMenor)
             {
-                menor = &i;
+                *menor = i;
                 achouMenor = 1;
             } 
         }

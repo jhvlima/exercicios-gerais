@@ -1,0 +1,3 @@
+Maior elemento: 0
+Menor elemento: 0
+Media dos elementos: 0.00

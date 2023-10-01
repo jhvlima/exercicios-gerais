@@ -35,9 +35,13 @@ void ImprimeDadosDoVetor(int * n, int tam)
         {
             printf("%d", n[i]);
         }
-        
-        printf(" %d", n[i]);
+
+        else
+        {
+            printf(" %d", n[i]);
+        }
     }   
+    printf("\n");
 }
 /**
  * @brief Troca o valor de duas variáveis se o segundo for menor que o primeiro.
@@ -57,13 +61,13 @@ void ImprimeDadosDoVetor(int * n, int tam)
  */
 void TrocaSeAcharMenor(int * vet, int tam, int * paraTrocar)
 {
-    for (int i = 0; i < tam; i++)
+    for (int i = 0; i < tam-1; i++)
     {
-        if (vet[*paraTrocar] > vet[i])
+        if (vet[*paraTrocar] < vet[i])
         {
-            int temp = *paraTrocar;
-            *paraTrocar = *vet;
-            *vet = temp;
+            int temp = vet[*paraTrocar];
+            vet[*paraTrocar] = vet[i];
+            vet[i] = temp;
         }
     }
 }
@@ -78,11 +82,10 @@ void TrocaSeAcharMenor(int * vet, int tam, int * paraTrocar)
  */
 void OrdeneCrescente(int * vet, int tam)
 {
+    int *troca;
     for (int i = 0; i < tam; i++)
     {
-        for (int j = i; j < tam-1; j++)
-        {
-            TrocaSeAcharMenor(vet, tam, j);
-        }   
+        troca = &i;
+        TrocaSeAcharMenor(vet, tam, troca);
     }
 }

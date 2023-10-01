@@ -1,9 +1,6 @@
-Resultados/JoaoHenrique/main/vetor.c: In function ‘OrdeneCrescente’:
-Resultados/JoaoHenrique/main/vetor.c:85:41: warning: passing argument 3 of ‘TrocaSeAcharMenor’ makes pointer from integer without a cast [-Wint-conversion]
-   85 |             TrocaSeAcharMenor(vet, tam, j);
-      |                                         ^
-      |                                         |
-      |                                         int
-Resultados/JoaoHenrique/main/vetor.c:58:50: note: expected ‘int *’ but argument is of type ‘int’
-   58 | void TrocaSeAcharMenor(int * vet, int tam, int * paraTrocar)
-      |                                            ~~~~~~^~~~~~~~~~
+Resultados/JoaoHenrique/main/vetor.c: In function ‘LeDadosParaVetor’:
+Resultados/JoaoHenrique/main/vetor.c:16:17: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   16 |         scanf("%d", vet[i]);
+      |                ~^   ~~~~~~
+      |                 |      |
+      |                 int *  int

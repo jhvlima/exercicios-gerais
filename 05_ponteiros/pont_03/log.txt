@@ -84,35 +84,35 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta vetor / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/vetor/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta vetor / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/vetor/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta vetor / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/vetor/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta vetor / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/vetor/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 1.
+ - Valgrind: Incorreto! allocs: 1, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
 
 #######################################
