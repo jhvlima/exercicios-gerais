@@ -1,6 +1,16 @@
-#include <stdio.h>
-#include "filme.h"
-#include <string.h>
+#ifndef _FILME_H
+#define _FILME_H
+
+#define MAX_CARACTERES 20 
+
+typedef struct Filme {
+    int codigo; 
+    char nome[MAX_CARACTERES]; 
+    int valor; 
+    int qtdEstoque; 
+    int qtdAlugada; 
+} tFilme;
+
 /**
  * @brief Cria um novo filme.
  * @param nome Nome do filme.
@@ -9,71 +19,48 @@
  * @param quantidade Quantidade em estoque do filme.
  * @return Filme criado.
  */
-tFilme criarFilme (char* nome, int codigo, int valor, int quantidade)
-{
-    tFilme filme;
-    strcpy(filme.nome, nome);
-    filme.codigo = codigo;
-    filme.valor = valor;
-    filme.qtdEstoque = quantidade;
-    filme.qtdAlugada = 0;
-    return filme;
-}
+tFilme criarFilme (char* nome, int codigo, int valor, int quantidade);
 
 /**
- * @brief Lê um filme a partir da entrada padrão.
+ * @brief Lê um filme.
+ * @param codigo Código do filme.
  * @return Filme lido.
- */
-tFilme lerFilme ();
+*/
+tFilme leFilme(int codigo);
 
 /**
  * @brief Obtém o código de um filme.
  * @param filme Filme a ser consultado.
  * @return Código do filme.
  */
-int obterCodigoFilme (tFilme filme)
-{
-    return filme.codigo;
-}
+int obterCodigoFilme (tFilme filme);
 
 /**
  * @brief Imprime o nome de um filme.
  * @param filme Filme a ser impresso.
  */
-void imprimirNomeFilme (tFilme filme)
-{
-    printf("%s", filme.nome);
-}
+void imprimirNomeFilme (tFilme filme);
 
 /**
  * @brief Obtém o valor de um filme.
  * @param filme Filme a ser consultado.
  * @return Valor do filme.
  */
-int obterValorFilme (tFilme filme)
-{
-    return filme.valor;
-}
+int obterValorFilme (tFilme filme);
 
 /**
  * @brief Obtém a quantidade em estoque de um filme.
  * @param filme Filme a ser consultado.
  * @return Quantidade em estoque do filme.
  */
-int obterQtdEstoqueFilme (tFilme filme)
-{
-    return filme.qtdEstoque;
-}
+int obterQtdEstoqueFilme (tFilme filme);
 
 /**
  * @brief Obtém a quantidade alugada de um filme.
  * @param filme Filme a ser consultado.
  * @return Quantidade alugada do filme.
  */
-int obterQtdAlugadaFilme (tFilme filme)
-{
-    return filme.qtdAlugada;
-}
+int obterQtdAlugadaFilme (tFilme filme);
 
 /**
  * @brief Verifica se um filme possui um determinado código.
@@ -81,38 +68,21 @@ int obterQtdAlugadaFilme (tFilme filme)
  * @param codigo Código a ser verificado.
  * @return 1 se o filme possui o código, 0 caso contrário.
  */
-int ehMesmoCodigoFilme (tFilme filme, int codigo)
-{
-    if (filme.codigo == codigo)
-    {
-        return 1;
-    }
-    return 0;
-}
+int ehMesmoCodigoFilme (tFilme filme, int codigo);
 
 /**
  * @brief Aluga um filme.
  * @param filme Filme a ser alugado.
  * @return Filme com a quantidade alugada atualizada.
  */
-tFilme alugarFilme (tFilme filme)
-{
-    filme.qtdAlugada++;
-    filme.qtdEstoque--;
-    return filme;
-}
+tFilme alugarFilme (tFilme filme);
 
 /**
  * @brief Devolve um filme.
  * @param filme Filme a ser devolvido.
  * @return Filme com a quantidade alugada atualizada.
  */
-tFilme devolverFilme (tFilme filme)
-{
-    filme.qtdAlugada--;
-    filme.qtdEstoque++;
-    return filme;
-}
+tFilme devolverFilme (tFilme filme);
 
 /**
  * @brief Compara os nomes de dois filmes.
@@ -121,3 +91,5 @@ tFilme devolverFilme (tFilme filme)
  * @return 0 se os nomes são iguais, um valor negativo se o nome do primeiro filme é menor que o do segundo, um valor positivo caso contrário.
  */
 int compararNomesFilmes (tFilme filme1, tFilme filme2);
+
+#endif

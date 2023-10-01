@@ -1,6 +1,14 @@
-#include <stdio.h>
-#include <string.h>
-#include "candidato.h"
+#ifndef _CANDIDATO_H_
+#define _CANDIDATO_H_
+
+typedef struct {
+    char nome[50];
+    char partido[50];
+    char cargo;
+    int id;
+    int votos;
+} tCandidato;
+
 /**
  * @brief Cria um candidato com os dados informados.
  * @param nome Nome do candidato.
@@ -9,30 +17,13 @@
  * @param id Identificador do candidato.
  * @return Candidato criado.
  */
-tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id)
-{
-    tCandidato candidato;
-    strcpy(candidato.nome, nome);
-    strcpy(candidato.partido, partido);
-    candidato.cargo = cargo;
-    candidato.id = id;
-    return candidato;
-}
+tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id);
 
 /**
  * @brief Lê um candidato.
  * @return Candidato lido.
  */
-tCandidato LeCandidato()
-{
-    char nome[256];
-    char partido[256];
-    char cargo;
-    int id;
-    scanf("%[^,] %*[^A-Za-z] %[^,] %*[^A-Za-z] %c%*c%d", nome, partido, &cargo, &id);
-    tCandidato  candidato = CriaCandidato(nome, partido, cargo, id);
-    return candidato;
-}
+tCandidato LeCandidato();
 
 /**
  * @brief Verifica se o identificador do candidato é igual ao informado.
@@ -40,14 +31,7 @@ tCandidato LeCandidato()
  * @param id Identificador a ser comparado.
  * @return 1 se o identificador é igual, 0 caso contrário.
  */
-int VerificaIdCandidato(tCandidato candidato, int id)
-{
-    if (candidato.id == id)
-    {
-        return 1;
-    }
-    return 0;
-}
+int VerificaIdCandidato(tCandidato candidato, int id);
 
 /**
  * @brief Verifica se dois candidatos são iguais (dica: utilize para verificar se houve empate).
@@ -55,45 +39,28 @@ int VerificaIdCandidato(tCandidato candidato, int id)
  * @param candidato2 Segundo candidato a ser comparado.
  * @return 1 se os candidatos são iguais, 0 caso contrário.
  */
-int EhMesmoCandidato(tCandidato candidato1, tCandidato candidato2)
-{
-    if (candidato1.id == candidato2.id)
-    {
-        return 1;
-    }
-    return 0;
-}
+int EhMesmoCandidato(tCandidato candidato1, tCandidato candidato2);
 
 /**
  * @brief Obtém o cargo do candidato.
  * @param candidato Candidato a ser verificado.
  * @return Cargo do candidato.
  */
-char ObtemCargo(tCandidato candidato)
-{
-    return candidato.cargo;
-}
+char ObtemCargo(tCandidato candidato);
 
 /**
  * @brief Incrementa 1 voto ao candidato.
  * @param candidato Candidato a ter os votos incrementados.
  * @return Candidato com a quantidade de votos incrementada.
  */
-tCandidato IncrementaVotoCandidato(tCandidato candidato)
-{
-    candidato.votos++;
-    return candidato;
-}
+tCandidato IncrementaVotoCandidato(tCandidato candidato);
 
 /**
  * @brief Obtém a quantidade de votos do candidato.
  * @param candidato Candidato a ser verificado.
  * @return Quantidade de votos do candidato.
  */
-int ObtemVotos(tCandidato candidato)
-{
-    return candidato.votos;
-}
+int ObtemVotos(tCandidato candidato);
 
 /**
  * @brief Calcula o percentual de votos do candidato em relação ao total de votos (do mesmo cargo).
@@ -101,17 +68,13 @@ int ObtemVotos(tCandidato candidato)
  * @param totalVotos Total de votos da eleição.
  * @return Percentual de votos do candidato.
  */
-float CalculaPercentualVotos(tCandidato candidato, int totalVotos)
-{
-    return (100*(candidato.votos))/totalVotos;
-}
+float CalculaPercentualVotos(tCandidato candidato, int totalVotos);
 
 /**
  * @brief Imprime os dados do candidato na tela.
  * @param candidato Candidato a ser impresso.
  * @param percentualVotos Percentual de votos do candidato.
  */
-void ImprimeCandidato (tCandidato candidato, float percentualVotos)
-{
-    printf("%s (%s), %d voto(s), %2.f%\n", candidato.nome, candidato.partido, candidato.votos, percentualVotos);
-}
+void ImprimeCandidato (tCandidato candidato, float percentualVotos);
+
+#endif
