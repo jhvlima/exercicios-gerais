@@ -27,7 +27,7 @@ void InicializaDataParam( int dia, int mes, int ano, tData *data);
 void LeData( tData *data )
 {
     int dia, mes, ano;
-    scanf("%d%d%d", &dia, &mes, &ano);
+    scanf("%d/%d/%d", &dia, &mes, &ano);
     data->dia = &dia, data->mes = &mes, data-> ano = &ano;
 }
 /**

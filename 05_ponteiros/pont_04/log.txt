@@ -80,27 +80,27 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta utils / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/utils/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 31.
  - Resultado para o saida.txt: Incorreto!
  - Pasta utils / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/utils/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 30.
  - Resultado para o saida.txt: Incorreto!
  - Pasta utils / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/utils/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 32.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 31.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 30.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 25.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 32.
  - Resultado para o saida.txt: Incorreto!
 
 #######################################

@@ -1,3 +1,4 @@
+#include "esfera_utils.h"
 /**
  * @brief Calcula o volume de uma esfera com raio R.
  * @param R O raio da esfera.
@@ -5,7 +6,7 @@
  */
 void CalculaVolume (float R, float *volume)
 {
-    float volumeCalc = R*R*R*PI*3/4 ;
+    float volumeCalc = R*R*R*PI*4/3 ;
     *volume = volumeCalc;
 }
 
@@ -16,6 +17,6 @@ void CalculaVolume (float R, float *volume)
  */
 void CalculaArea (float R, float *area)
 {
-    float areaCalc = PI*R*R;
+    float areaCalc = 4*PI*R*R;
     *area = areaCalc;
 }

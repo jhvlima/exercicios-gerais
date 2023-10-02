@@ -1,2 +1,0 @@
-./correcao.sh: line 488: gcc: command not found
-./correcao.sh: line 488: gcc: command not found

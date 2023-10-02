@@ -1,2 +1,2 @@
 Test Case: Resultados/JoaoHenrique/utils/Casos/1
-Valgrind result: allocs: 2 frees: 2 errors: 25 contexts: 22
+Valgrind result: allocs: 2 frees: 2 errors: 31 contexts: 24
