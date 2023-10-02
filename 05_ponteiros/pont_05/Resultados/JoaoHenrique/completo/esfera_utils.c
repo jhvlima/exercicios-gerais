@@ -1,3 +1,4 @@
+
 /**
  * @brief Calcula o volume de uma esfera com raio R.
  * @param R O raio da esfera.
@@ -17,5 +18,5 @@ void CalculaVolume (float R, float *volume)
 void CalculaArea (float R, float *area)
 {
     float areaCalc = PI*R*R;
-    *area = areaCalc;
+    *area = &areaCalc;
 }

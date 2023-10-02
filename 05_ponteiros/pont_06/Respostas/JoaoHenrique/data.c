@@ -1,6 +1,3 @@
-#ifndef DATA_H
-#define	DATA_H
-
 
 typedef struct Data {
     int dia;
@@ -27,8 +24,12 @@ void InicializaDataParam( int dia, int mes, int ano, tData *data);
  * 
  * @param data Ponteiro para a estrutura tData que será preenchida com os valores lidos.
  */
-void LeData( tData *data );
-
+void LeData( tData *data )
+{
+    int dia, mes, ano;
+    scanf("%d%d%d", &dia, &mes, &ano);
+    data->dia = &dia, data->mes = &mes, data-> ano = &ano;
+}
 /**
  * @brief Imprime uma data na tela.
  * 
@@ -76,6 +77,7 @@ void AvancaParaDiaSeguinte( tData *data );
  * @param data2 Ponteiro para a segunda estrutura tData que será comparada.
  * @return 1 se as datas são iguais, 0 caso contrário.
  */
-int EhIgual( tData *data1, tData *data2 );
+int EhIgual( tData *data1, tData *data2 )
+{
 
-#endif	
+}

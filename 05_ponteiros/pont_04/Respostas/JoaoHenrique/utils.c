@@ -26,9 +26,19 @@ void LeNumeros(int *array, int tamanho)
  */
 void EncontraMaiorMenorMedia(int *array, int tamanho, int *maior, int *menor, float *media)
 {
+    int maior, menor, media = 0;
+    maior = maior;
     for (int i = 0; i < tamanho; i++)
     {
-        /* code */
+        if (maior < array[i])
+        {
+            maior = array[i];
+        }
+        if (menor > array[i])
+        {
+            menor = array[i];
+        }
+        media+= array[i];
     }
-    
+    media = media/tamanho;
 }
