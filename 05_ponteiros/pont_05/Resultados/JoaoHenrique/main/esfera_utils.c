@@ -6,8 +6,7 @@
  */
 void CalculaVolume (float R, float *volume)
 {
-    float volumeCalc = R*R*R*PI*4/3 ;
-    *volume = volumeCalc;
+    *volume = R*R*R*PI*4/3;
 }
 
 /**
@@ -17,6 +16,5 @@ void CalculaVolume (float R, float *volume)
  */
 void CalculaArea (float R, float *area)
 {
-    float areaCalc = 4*PI*R*R;
-    *area = areaCalc;
+    *area = 4*PI*R*R;
 }
