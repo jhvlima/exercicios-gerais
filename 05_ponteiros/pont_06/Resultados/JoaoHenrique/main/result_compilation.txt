@@ -1,23 +1,23 @@
 Resultados/JoaoHenrique/main/data.c: In function ‘LeData’:
-Resultados/JoaoHenrique/main/data.c:30:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
-   30 |     scanf("%d/%d/%d", &dia, &mes, &ano);
+Resultados/JoaoHenrique/main/data.c:31:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   31 |     scanf("%d/%d/%d", &dia, &mes, &ano);
       |     ^~~~~
 Resultados/JoaoHenrique/main/data.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
   +++ |+#include <stdio.h>
     1 | 
-Resultados/JoaoHenrique/main/data.c:30:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
-   30 |     scanf("%d/%d/%d", &dia, &mes, &ano);
+Resultados/JoaoHenrique/main/data.c:31:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   31 |     scanf("%d/%d/%d", &dia, &mes, &ano);
       |     ^~~~~
-Resultados/JoaoHenrique/main/data.c:30:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
-Resultados/JoaoHenrique/main/data.c:31:15: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
-   31 |     data->dia = &dia, data->mes = &mes, data-> ano = &ano;
+Resultados/JoaoHenrique/main/data.c:31:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/JoaoHenrique/main/data.c:32:15: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   32 |     data->dia = &dia, data->mes = &mes, data->ano = &ano;
       |               ^
-Resultados/JoaoHenrique/main/data.c:31:33: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
-   31 |     data->dia = &dia, data->mes = &mes, data-> ano = &ano;
+Resultados/JoaoHenrique/main/data.c:32:33: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   32 |     data->dia = &dia, data->mes = &mes, data->ano = &ano;
       |                                 ^
-Resultados/JoaoHenrique/main/data.c:31:52: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
-   31 |     data->dia = &dia, data->mes = &mes, data-> ano = &ano;
-      |                                                    ^
+Resultados/JoaoHenrique/main/data.c:32:51: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   32 |     data->dia = &dia, data->mes = &mes, data->ano = &ano;
+      |                                                   ^
 Resultados/JoaoHenrique/main/data.c: In function ‘EhIgual’:
 Resultados/JoaoHenrique/main/data.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
    83 | }
