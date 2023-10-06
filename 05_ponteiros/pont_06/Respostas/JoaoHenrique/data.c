@@ -1,10 +1,5 @@
-
-typedef struct Data
-{
-    int dia;
-    int mes;
-    int ano;
-} tData;
+#include <stdio.h>
+#include "data.h"
 
 /**
  * @brief Inicializa uma data com os valores passados como parâmetro.
@@ -16,7 +11,12 @@ typedef struct Data
  * @param ano Ano da data.
  * @param data Ponteiro para a estrutura tData que será inicializada.
  */
-void InicializaDataParam(int dia, int mes, int ano, tData *data);
+void InicializaDataParam(int dia, int mes, int ano, tData *data)
+{
+    data->dia = dia;
+    data->mes = mes;
+    data->ano = ano;
+}
 
 /**
  * @brief Lê uma data do usuário.
@@ -41,7 +41,7 @@ void LeData(tData *data)
  */
 void ImprimeData(tData *data)
 {
-    printf("%d/%d/%d", data->dia, data->mes, data->ano);
+    printf("'%d/%d/%d'\n", data->dia, data->mes, data->ano);
 }
 
 /**
@@ -81,7 +81,14 @@ int InformaQtdDiasNoMes(tData *data);
  *
  * @param data Ponteiro para a estrutura tData que será avançada.
  */
-void AvancaParaDiaSeguinte(tData *data);
+void AvancaParaDiaSeguinte(tData *data)
+{
+    if (data->)
+    {
+        /* code */
+    }
+    
+}
 
 /**
  * @brief Verifica se duas datas são iguais.

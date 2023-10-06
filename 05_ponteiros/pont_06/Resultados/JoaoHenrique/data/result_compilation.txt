@@ -1,14 +1,4 @@
 Resultados/JoaoHenrique/data/data.c: In function ‘LeData’:
-Resultados/JoaoHenrique/data/data.c:31:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
-   31 |     scanf("%d/%d/%d", &dia, &mes, &ano);
-      |     ^~~~~
-Resultados/JoaoHenrique/data/data.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
-  +++ |+#include <stdio.h>
-    1 | 
-Resultados/JoaoHenrique/data/data.c:31:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
-   31 |     scanf("%d/%d/%d", &dia, &mes, &ano);
-      |     ^~~~~
-Resultados/JoaoHenrique/data/data.c:31:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
 Resultados/JoaoHenrique/data/data.c:32:15: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
    32 |     data->dia = &dia, data->mes = &mes, data->ano = &ano;
       |               ^
@@ -18,35 +8,3 @@ Resultados/JoaoHenrique/data/data.c:32:33: warning: assignment to ‘int’ from
 Resultados/JoaoHenrique/data/data.c:32:51: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
    32 |     data->dia = &dia, data->mes = &mes, data->ano = &ano;
       |                                                   ^
-Resultados/JoaoHenrique/data/data.c: In function ‘EhIgual’:
-Resultados/JoaoHenrique/data/data.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
-   83 | }
-      | ^
-Resultados/JoaoHenrique/data/main.c: In function ‘main’:
-Resultados/JoaoHenrique/data/main.c:15:21: error: incompatible type for argument 1 of ‘EhIgual’
-   15 |     while (!EhIgual(data, dataFim))
-      |                     ^~~~
-      |                     |
-      |                     tData {aka struct Data}
-In file included from Resultados/JoaoHenrique/data/main.c:3:
-Resultados/JoaoHenrique/data/data.h:79:21: note: expected ‘tData *’ {aka ‘struct Data *’} but argument is of type ‘tData’ {aka ‘struct Data’}
-   79 | int EhIgual( tData *data1, tData *data2 );
-      |              ~~~~~~~^~~~~
-Resultados/JoaoHenrique/data/main.c:15:27: error: incompatible type for argument 2 of ‘EhIgual’
-   15 |     while (!EhIgual(data, dataFim))
-      |                           ^~~~~~~
-      |                           |
-      |                           tData {aka struct Data}
-In file included from Resultados/JoaoHenrique/data/main.c:3:
-Resultados/JoaoHenrique/data/data.h:79:35: note: expected ‘tData *’ {aka ‘struct Data *’} but argument is of type ‘tData’ {aka ‘struct Data’}
-   79 | int EhIgual( tData *data1, tData *data2 );
-      |                            ~~~~~~~^~~~~
-Resultados/JoaoHenrique/data/main.c:17:21: error: incompatible type for argument 1 of ‘ImprimeData’
-   17 |         ImprimeData(data);
-      |                     ^~~~
-      |                     |
-      |                     tData {aka struct Data}
-In file included from Resultados/JoaoHenrique/data/main.c:3:
-Resultados/JoaoHenrique/data/data.h:39:26: note: expected ‘tData *’ {aka ‘struct Data *’} but argument is of type ‘tData’ {aka ‘struct Data’}
-   39 | void ImprimeData( tData *data );
-      |                   ~~~~~~~^~~~

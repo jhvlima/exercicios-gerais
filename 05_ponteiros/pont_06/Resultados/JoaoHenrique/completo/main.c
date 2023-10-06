@@ -8,13 +8,16 @@ int main()
     tData dataIni;
     tData dataFim;
 
+    tData *pdata = &data;
+    tData *pdataFim = &dataFim;
+
     LeData(&dataIni);
     LeData(&dataFim);
 
     data = dataIni;
-    while (!EhIgual(data, dataFim))
+    while (!EhIgual(pdata, pdataFim))
     {
-        ImprimeData(data);
+        ImprimeData(pdata);
         printf("\n");
 
         AvancaParaDiaSeguinte(&data);

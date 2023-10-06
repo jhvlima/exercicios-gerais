@@ -1,6 +1,3 @@
-#ifndef _CALCULADORA_H
-#define _CALCULADORA_H
-
 /**
  * @brief Ponteiro para função que recebe dois float e realiza uma operação matemática.
  * 
@@ -17,5 +14,3 @@ typedef float (*CalculatoraCallback)(float, float);
  * @return float Resultado da operação matemática.
  */
 float Calcular(float num1, float num2, CalculatoraCallback operacao);
-
-#endif

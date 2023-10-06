@@ -1,10 +1,5 @@
-
-typedef struct Data
-{
-    int dia;
-    int mes;
-    int ano;
-} tData;
+#include <stdio.h>
+#include "data.h"
 
 /**
  * @brief Inicializa uma data com os valores passados como parâmetro.
@@ -16,7 +11,12 @@ typedef struct Data
  * @param ano Ano da data.
  * @param data Ponteiro para a estrutura tData que será inicializada.
  */
-void InicializaDataParam(int dia, int mes, int ano, tData *data);
+void InicializaDataParam(int dia, int mes, int ano, tData *data)
+{
+    data->dia = dia;
+    data->mes = mes;
+    data->ano = ano;
+}
 
 /**
  * @brief Lê uma data do usuário.
@@ -36,9 +36,13 @@ void LeData(tData *data)
  *
  * Esta função recebe como parâmetro uma estrutura tData e imprime na tela o dia, mês e ano correspondentes.
  *
+ *
  * @param data Ponteiro para a estrutura tData que será impressa.
  */
-void ImprimeData(tData *data);
+void ImprimeData(tData *data)
+{
+    printf("'%d/%d/%d'\n", data->dia, data->mes, data->ano);
+}
 
 /**
  * @brief Verifica se um ano é bissexto.
@@ -48,7 +52,17 @@ void ImprimeData(tData *data);
  * @param data Ponteiro para a estrutura tData que será verificada.
  * @return 1 se o ano é bissexto, 0 caso contrário.
  */
-int EhBissexto(tData *data);
+int EhBissexto(tData *data)
+{
+    if (data->ano % 4 == 0)
+    {
+        if (data->ano % 100 == 0)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
 
 /**
  * @brief Informa a quantidade de dias no mês de uma data.
@@ -67,7 +81,10 @@ int InformaQtdDiasNoMes(tData *data);
  *
  * @param data Ponteiro para a estrutura tData que será avançada.
  */
-void AvancaParaDiaSeguinte(tData *data);
+void AvancaParaDiaSeguinte(tData *data)
+{
+
+}
 
 /**
  * @brief Verifica se duas datas são iguais.
@@ -80,4 +97,13 @@ void AvancaParaDiaSeguinte(tData *data);
  */
 int EhIgual(tData *data1, tData *data2)
 {
+    if (data1->dia == data2->dia && data1->mes == data2->mes && data1->ano == data2->ano)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+    
 }
