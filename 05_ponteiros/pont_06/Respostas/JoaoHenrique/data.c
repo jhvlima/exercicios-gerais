@@ -28,9 +28,11 @@ void InicializaDataParam(int dia, int mes, int ano, tData *data)
 void LeData(tData *data)
 {
     int dia, mes, ano;
-    scanf("%d/%d/%d", &dia, &mes, &ano);
-    data->dia = &dia, data->mes = &mes, data->ano = &ano;
+    scanf("%d %d %d", &dia, &mes, &ano);
+    InicializaDataParam(dia, mes, ano, data);
 }
+
+
 /**
  * @brief Imprime uma data na tela.
  *
@@ -41,7 +43,7 @@ void LeData(tData *data)
  */
 void ImprimeData(tData *data)
 {
-    printf("'%d/%d/%d'\n", data->dia, data->mes, data->ano);
+    printf("'%d/%d/%d'", data->dia, data->mes, data->ano);
 }
 
 /**
@@ -58,8 +60,13 @@ int EhBissexto(tData *data)
     {
         if (data->ano % 100 == 0)
         {
-            return 1;
+            if (data->ano % 400 == 0)
+            {
+                return 1;
+            }
+            return 0;
         }
+        return 1;
     }
     return 0;
 }
@@ -72,7 +79,34 @@ int EhBissexto(tData *data)
  * @param data Ponteiro para a estrutura tData que será verificada.
  * @return Quantidade de dias no mês correspondente.
  */
-int InformaQtdDiasNoMes(tData *data);
+int InformaQtdDiasNoMes(tData *data)
+{
+    if (data->mes == 1 || data->mes == 3 || data->mes == 5 || data->mes == 7 || data->mes == 8 ||
+        data->mes == 1 || data->mes == 10 || data->mes == 12)
+    {
+        return 31;
+    }
+    if (data->mes == 4 || data->mes == 6 || data->mes == 9 || data->mes == 11)
+    {
+        return 30;
+    }
+    if (data->mes == 2)
+    {
+        if (EhBissexto(data))
+        {
+            return 29;
+        }
+        else
+        {
+            return 28;
+        }
+    }
+    else
+    {
+        printf("Erro: mes invalido");
+        return 0;
+    }
+}
 
 /**
  * @brief Avança uma data para o dia seguinte.
@@ -83,11 +117,21 @@ int InformaQtdDiasNoMes(tData *data);
  */
 void AvancaParaDiaSeguinte(tData *data)
 {
-    if (data->)
+    if (data->dia == InformaQtdDiasNoMes(data))
     {
-        /* code */
+        data->dia = 1;
+
+        if (data->mes == 12)
+        {
+            data->mes = 1;
+            data->ano++;
+        }
+        
+        else
+        {
+            data->mes++;
+        }
     }
-    
 }
 
 /**
@@ -101,7 +145,7 @@ void AvancaParaDiaSeguinte(tData *data)
  */
 int EhIgual(tData *data1, tData *data2)
 {
-    if (data1->dia == data2->dia && data1->mes == data2->mes && data1->ano == data2->ano)
+    if ((data1->dia == data2->dia) && (data1->mes == data2->mes) && (data1->ano == data2->ano))
     {
         return 1;
     }
@@ -109,5 +153,4 @@ int EhIgual(tData *data1, tData *data2)
     {
         return 0;
     }
-    
 }

@@ -19,7 +19,6 @@ int main()
     {
         ImprimeData(pdata);
         printf("\n");
-
         AvancaParaDiaSeguinte(&data);
     }
 
