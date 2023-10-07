@@ -1,0 +1,32 @@
+# Define the compiler and compiler flags
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+# Define the source and header file directories
+SRC_DIR = src
+INCLUDE_DIR = include
+
+# Get a list of all .c and .h files in the source directory
+SRC_FILES := $(wildcard $(SRC_DIR)/*.c)
+HEADER_FILES := $(wildcard $(INCLUDE_DIR)/*.h)
+
+# Generate object file names from source files
+OBJ_FILES := $(patsubst $(SRC_DIR)/%.c, $(SRC_DIR)/%.o, $(SRC_FILES))
+
+# Define the output executable
+TARGET = myprogram
+
+# Default target: build the executable
+all: $(TARGET)
+
+# Build the executable by linking object files
+$(TARGET): $(OBJ_FILES)
+    $(CC) $(CFLAGS) -o $@ $^
+
+# Compile each .c file into a .o file
+$(SRC_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER_FILES)
+    $(CC) $(CFLAGS) -I$(INCLUDE_DIR) -c -o $@ $<
+
+# Clean up object files and the executable
+clean:
+    rm -f $(OBJ_FILES) $(TARGET)
