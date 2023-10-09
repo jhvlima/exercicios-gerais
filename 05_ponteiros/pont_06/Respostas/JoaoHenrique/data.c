@@ -43,7 +43,7 @@ void LeData(tData *data)
  */
 void ImprimeData(tData *data)
 {
-    printf("'%d/%d/%d'", data->dia, data->mes, data->ano);
+    printf("'%.2d/%.2d/%d'", data->dia, data->mes, data->ano);
 }
 
 /**
@@ -127,11 +127,17 @@ void AvancaParaDiaSeguinte(tData *data)
             data->ano++;
         }
         
+        
         else
         {
             data->mes++;
         }
     }
+    else
+    {
+        data->dia++;
+    }
+    
 }
 
 /**

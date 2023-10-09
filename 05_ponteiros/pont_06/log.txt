@@ -68,12 +68,12 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta data / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/data/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta data / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/data/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta data / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/data/Casos/3/result_valgrind.txt.
  - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
@@ -100,12 +100,12 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoHenrique/completo/Casos/3/result_valgrind.txt.
  - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
@@ -124,15 +124,15 @@ Nome 0: JoaoHenrique
  - Arquivos Corretos: 3 de 3 / Nota 10.00
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
- - Resultados Corretos data: 0 de 4 / Nota 0.00
- - Valgrinds Corretos data: 0 de 4 / Nota 0.00
+ - Resultados Corretos data: 2 de 4 / Nota 5.00
+ - Valgrinds Corretos data: 2 de 4 / Nota 5.00
  - Resultados Corretos main: 4 de 4 / Nota 10.00
  - Valgrinds Corretos main: 4 de 4 / Nota 10.00
- - Resultados Corretos completo: 0 de 4 / Nota 0.00
- - Valgrinds Corretos completo: 0 de 4 / Nota 0.00
- - Soma das notas do JoaoHenrique: 50.000
+ - Resultados Corretos completo: 2 de 4 / Nota 5.00
+ - Valgrinds Corretos completo: 2 de 4 / Nota 5.00
+ - Soma das notas do JoaoHenrique: 70.000
  - Campos Considerados: 9
- - Média do JoaoHenrique: 5.55
+ - Média do JoaoHenrique: 7.77
 
 ----------------------------------------------------------------------------
 

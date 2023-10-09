@@ -1,6 +1,0 @@
-/usr/bin/ld: Resultados/JoaoHenrique/evento/main.o: in function `main':
-main.c:(.text+0x10b): undefined reference to `cadastrarEvento'
-/usr/bin/ld: main.c:(.text+0x129): undefined reference to `exibirEventos'
-/usr/bin/ld: main.c:(.text+0x147): undefined reference to `trocarDataEvento'
-/usr/bin/ld: main.c:(.text+0x192): undefined reference to `trocarIndicesEventos'
-collect2: error: ld returned 1 exit status
