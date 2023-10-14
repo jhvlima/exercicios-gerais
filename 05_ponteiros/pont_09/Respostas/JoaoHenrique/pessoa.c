@@ -7,10 +7,10 @@
  */
 tPessoa CriaPessoa()
 {
-    tPessoa pessoa;
-    scanf("%[^\n]", pessoa.nome);
-    pessoa.mae = 0;
-    pessoa.pai = 0;
+    tPessoa *pessoa = malloc(sizeof(tPessoa));
+    scanf("%[^\n]", pessoa->nome);
+    pessoa->mae = -1;
+    pessoa->pai = -1;
 }
 
 /**
@@ -20,7 +20,7 @@ tPessoa CriaPessoa()
  */
 void LePessoa(tPessoa *pessoa)
 {
-    
+    scanf("%[^\n]", pessoa->nome);
 }
 
 /**
@@ -30,25 +30,24 @@ void LePessoa(tPessoa *pessoa)
  */
 void ImprimePessoa(tPessoa *pessoa)
 {
-    int indicePai = pessoa->pai;
     printf("NOME COMPLETO: %s\n", pessoa->nome); 
 
     if (pessoa->pai != -1)
     {
-        printf("PAI: %s\n", pessoa->nome); 
+        printf("PAI: %s\n", pessoa()->nome); 
     }
     else
     {
-        printf("NAO INFORMADO\n");
+        printf("PAI: NAO INFORMADO\n");
     }
 
-    if (/* condition */)
+    if (pessoa->mae != -1)
     {
-        /* code */
+        printf("MAE: %s\n", pessoa->nome); 
     }
     else
     {
-        printf("NAO INFORMADO\n");
+        printf("MAE: NAO INFORMADO\n");
     }
     
 }

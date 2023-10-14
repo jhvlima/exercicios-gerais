@@ -1,9 +1,5 @@
-#ifndef _ROLAGEM_H
-#define _ROLAGEM_H
-
-#define TAM_MAX_MSG 1000
-#define NUM_MAX_MSGS 10
-
+#include <stdio.h>
+#include "rolagem.h"
 /**
  * @brief Ponteiro para função que recebe um array de mensagens e o número de mensagens para rolagem.
  * 
@@ -19,6 +15,7 @@ typedef void (*FptrMsg)(char msg[NUM_MAX_MSGS][TAM_MAX_MSG], int * numMsgs);
  * @param tamanhoDisplay Tamanho do display.
  * @param tempoFim Tempo de duração da rolagem.
  */
-void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim);
+void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim)
+{
 
-#endif
+}
