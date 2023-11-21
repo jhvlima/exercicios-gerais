@@ -1,0 +1,10 @@
+/usr/bin/ld: Resultados/JoaoHenrique/ponto/circulo.o: in function `Circulo_Cria':
+circulo.c:(.text+0x39): undefined reference to `Pto_Cria'
+/usr/bin/ld: Resultados/JoaoHenrique/ponto/circulo.o: in function `Circulo_Interior':
+circulo.c:(.text+0x118): undefined reference to `Pto_Distancia'
+/usr/bin/ld: Resultados/JoaoHenrique/ponto/main.o: in function `main':
+main.c:(.text+0x8f): undefined reference to `Pto_Cria'
+/usr/bin/ld: main.c:(.text+0xc5): undefined reference to `Pto_Apaga'
+/usr/bin/ld: main.c:(.text+0x109): undefined reference to `Pto_Cria'
+/usr/bin/ld: main.c:(.text+0x14e): undefined reference to `Pto_Apaga'
+collect2: error: ld returned 1 exit status

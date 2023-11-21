@@ -6,7 +6,7 @@
 /* TAD Opaco */
 struct circulo
 {
-	tPonto *centro;
+	tPonto centro;
 	float raio;
 };
 

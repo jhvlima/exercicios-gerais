@@ -1,4 +1,4 @@
-/* ponto.c
+/* ponto.h
 
 	TAD Ponto: tipo abstrato de dado para representar um ponto no RxR.
 	
@@ -13,8 +13,8 @@
 
 struct ponto 
 {
-    float x;
-    float y;
+	float x;
+	float y;
 };
 
 /* Funcoes exportadas */

@@ -1,14 +1,18 @@
-#ifndef _ALUNO_H_
-#define _ALUNO_H_
 
-typedef struct Aluno tAluno;
+struct Aluno
+{
+    
+};
 
 /**
  * @brief Cria um novo aluno vazio. Os atributos inteiros devem receber valor -1, e o ponteiro do nome deve apontar para NULL;
  * 
  * @return tAluno Retorna uma estrutura tAluno com os dados do aluno criado.
  */
-tAluno* CriaAluno(); 
+tAluno* CriaAluno()
+{
+
+} 
 
 /**
  * @brief Função para liberar toda a memória alocada dinamicamente para estrututas do tipo tAluno
