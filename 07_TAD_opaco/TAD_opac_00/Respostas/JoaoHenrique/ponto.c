@@ -26,7 +26,7 @@ struct ponto
  */
 tPonto Pto_Cria (float x, float y)
 {
-	tPonto *ponto = malloc(sizeof(struct ponto));
+	tPonto ponto = malloc(sizeof(struct ponto));
 	ponto->x = x;
 	ponto->y = y;
 	return ponto;

@@ -21,9 +21,9 @@ struct circulo
  */
 tCirculo Circulo_Cria (float x, float y, float r)
 {
-	tCirculo *circulo = malloc(sizeof(tCirculo));
+	tCirculo circulo = malloc(sizeof(struct circulo));
 	Circulo_Atribui_Raio(circulo, r);
-	tPonto *ponto = Pto_Cria(x,y);
+	tPonto ponto = Pto_Cria(x,y);
 	Circulo_Atribui_Centro(circulo, ponto);
 	return circulo;
 }

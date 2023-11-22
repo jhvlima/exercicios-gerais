@@ -1,8 +1,0 @@
-/usr/bin/ld: Resultados/JoaoHenrique/completo/circulo.o: in function `Circulo_Cria':
-circulo.c:(.text+0x4c): undefined reference to `Pto_Cria'
-/usr/bin/ld: Resultados/JoaoHenrique/completo/circulo.o: in function `Circulo_Interior':
-circulo.c:(.text+0x136): undefined reference to `Pto_Distancia'
-/usr/bin/ld: Resultados/JoaoHenrique/completo/main.o: in function `main':
-main.c:(.text+0x7c): undefined reference to `Pto_Cria'
-/usr/bin/ld: main.c:(.text+0xbb): undefined reference to `Pto_Apaga'
-collect2: error: ld returned 1 exit status
