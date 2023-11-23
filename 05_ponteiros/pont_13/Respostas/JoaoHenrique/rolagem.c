@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "rolagem.h"
+
 /**
  * @brief Ponteiro para função que recebe um array de mensagens e o número de mensagens para rolagem.
  * 

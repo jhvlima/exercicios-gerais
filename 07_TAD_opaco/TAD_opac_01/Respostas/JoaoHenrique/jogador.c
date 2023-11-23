@@ -1,13 +1,16 @@
-#ifndef _JOGADOR_H
-#define _JOGADOR_H
-
-#include "tabuleiro.h"
-
+#include <stdio.h>
+#include<stdlib.h>
+#include <tabuleiro.h>
+#include "jogador.h"
 
 #define ID_JOGADOR_1 1
 #define ID_JOGADOR_2 2
 
-typedef struct Jogador tJogador;
+struct Jogador
+{
+    int id;
+
+};
 
 
 /**
@@ -18,7 +21,16 @@ typedef struct Jogador tJogador;
  * 
  * @return a estrutura do tipo tJogador alocada.
  */
-tJogador* CriaJogador(int idJogador);
+tJogador* CriaJogador(int idJogador)
+{
+    tJogador *jogador = malloc(sizeof(tJogador));
+    if (jogador == NULL)
+    {
+        exit(1);
+    }
+    jogador->id = idJogador;
+    return jogador
+}
 
 
 /**
@@ -26,7 +38,10 @@ tJogador* CriaJogador(int idJogador);
  * 
  * @param jogador a estrutura do tipo tJogador a ser liberada.
  */
-void DestroiJogador(tJogador* jogador);
+void DestroiJogador(tJogador* jogador)
+{
+    free(jogador);
+}
 
 
 /**
@@ -35,7 +50,10 @@ void DestroiJogador(tJogador* jogador);
  * @param jogador o jogador atual.
  * @param tabuleiro o tabuleiro atual.
  */
-void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro);
+void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro)
+{
+    
+}
 
 
 /**
@@ -46,6 +64,7 @@ void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro);
  * 
  * @return 1 se o jogador venceu, 0 caso contrário.
  */
-int VenceuJogador(tJogador* jogador, tTabuleiro* tabuleiro);
-
-#endif
+int VenceuJogador(tJogador* jogador, tTabuleiro* tabuleiro)
+{
+    
+}

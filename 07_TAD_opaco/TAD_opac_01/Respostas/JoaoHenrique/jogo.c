@@ -1,10 +1,15 @@
-#ifndef _JOGO_H
-#define _JOGO_H
-
+#include <stdio.h>
+#include<stdlib.h>
+#include "jogo.h"
 #include "jogador.h"
 #include "tabuleiro.h"
 
-typedef struct Jogo tJogo;
+struct Jogo
+{
+    tJogador *player_1;
+    tJogador *player_2;
+    tTabuleiro *tab;
+};
 
 
 /**
@@ -13,7 +18,14 @@ typedef struct Jogo tJogo;
  * 
  * @return a estrutura do tipo tJogo alocada.
  */
-tJogo* CriaJogo();
+tJogo* CriaJogo()
+{
+    tJogo *jogo = malloc(sizeof(tJogo));
+    jogo->tab = CriaTabuleiro();
+    jogo->player_1 = CriaJogador(1);
+    jogo->player_2 = CriaJogador(2);
+    return jogo;
+}
 
 
 /**
@@ -21,7 +33,10 @@ tJogo* CriaJogo();
  * 
  * @param jogo o jogo a ser iniciado.
  */
-void ComecaJogo(tJogo* jogo);
+void ComecaJogo(tJogo* jogo)
+{
+    
+}
 
 
 /**
@@ -31,7 +46,10 @@ void ComecaJogo(tJogo* jogo);
  * 
  * @return 1 se o jogo acabou, 0 caso contrário.
  */
-int AcabouJogo(tJogo* jogo);
+int AcabouJogo(tJogo* jogo)
+{
+    return !TemPosicaoLivreTabuleiro(jogo->tab);
+}
 
 
 /**
@@ -39,7 +57,25 @@ int AcabouJogo(tJogo* jogo);
  * 
  * @return 1 se o usuário deseja jogar novamente, 0 caso contrário.
  */
-int ContinuaJogo();
+int ContinuaJogo()
+{
+    char simounao = '\0';
+    while (simounao != 's' && simounao != 'n')
+    {
+        printf("Jogar novamente? (s,n)\n");
+
+        scanf("%*[^sn]");
+        if (scanf("%c", &simounao) == EOF)
+            simounao = 'n';
+        scanf("%*[^\n]");
+        if (scanf("%*c") == EOF)
+            simounao = 'n';
+    }
+    if (simounao == 's')
+        return 1;
+    else
+        return 0;
+}
 
 
 /**
@@ -47,6 +83,10 @@ int ContinuaJogo();
  * 
  * @param jogo a estrutura do tipo tJogo a ser liberada.
  */
-void DestroiJogo(tJogo* jogo);
-
-#endif
+void DestroiJogo(tJogo* jogo)
+{
+    DestroiJogador(jogo->player_1);
+    DestroiJogador(jogo->player_2);
+    DestroiTabuleiro(jogo->tab);
+    free(jogo);
+}
