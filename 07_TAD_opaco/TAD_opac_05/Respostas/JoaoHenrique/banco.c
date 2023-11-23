@@ -1,7 +1,14 @@
-#ifndef _BANCO_H_
-#define _BANCO_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include "conta.h"
+#include "banco.h"
 
-typedef struct Banco tBanco;
+#define QTD_CONTAS 5
+
+struct Banco
+{
+
+};
 
 /**
  * @brief Cria um novo banco, com 5 contas alocadas e nenhuma conta aberta.
@@ -9,7 +16,15 @@ typedef struct Banco tBanco;
  * 
  * @return Um ponteiro para o novo banco criado.
  */
-tBanco *CriaBanco();
+tBanco *CriaBanco()
+{
+    tBanco *banco = malloc(sizeof(tConta*) * QTD_CONTAS);
+    if (banco == NULL)
+    {
+        exit(1);
+    }
+    return banco;
+}
 
 /**
  * @brief Desaloca a memória de um banco e de todas as suas contas.
@@ -55,5 +70,3 @@ void TransferenciaContaBanco(tBanco *banco);
  * @param banco Ponteiro para o banco a ser impresso.
  */
 void ImprimeRelatorioBanco(tBanco *banco);
-
-#endif

@@ -12,6 +12,7 @@ int CompareAlunos(const void *a, const void *b)
     return ComparaMatricula(aluno1, aluno2);
 }
 
+
 void OrdenaLista(tAluno **aluno, int qnt_alunos)
 {
     qsort(aluno, qnt_alunos, sizeof(tAluno *), CompareAlunos);

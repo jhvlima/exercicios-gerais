@@ -1,0 +1,2 @@
+Test Case: Resultados/JoaoHenrique/array/Casos/1
+Valgrind result: allocs: 55,964 frees: 55,961 errors: 0 contexts: 0
